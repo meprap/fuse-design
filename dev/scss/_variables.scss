@@ -12,10 +12,10 @@ $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-600: #808080 !default; // Fuse Gray
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-800: #444048 !default; // Fuse Dark
+$gray-900: #5c5661 !default; // Fuse Dark Active
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
@@ -36,47 +36,40 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:          #2275c3 !default;
-$indigo:        #6610f2 !default;
-$purple:        #6f42c1 !default;
-$pink:          #d63384 !default;
-$red:           #dc3545 !default;
-$orange:        #f58220 !default;
-$yellow:        #ffc107 !default;
-$green:         #198754 !default;
-$teal:          #20c997 !default;
-$cyan:          #0dcaf0 !default;
-$orr-blue:      #065094 !default;
-$dark-blue:     #0e2449 !default;
-$light-blue:    #d7e9f5 !default;
-$pale-blue:     #edf8ff !default;
-$hover-blue:    #2e96de !default;
-$bright-blue:   #D8D8D8 !default;
-$cream:         #fdf9f5 !default;
-$light-orange:  #ff8f1f !default;
+$blue:                  #40A8F5 !default; // Fuse Blue
+$blue-hover:            #279cf5 !default; // Fuse Blue Hover
+$indigo:                #6610f2 !default;
+$purple:                #6f42c1 !default;
+$pink:                  #d63384 !default;
+$red:                   #dc3545 !default;
+$orange:                #fd7e14 !default;
+$yellow:                #fde753 !default; // Fuse Yellow
+$yellow-hover:          #fee139 !default; // Fuse Yellow Hover
+$green:                 #198754 !default;
+$teal:                  #20c997 !default;
+$cyan:                  #0dcaf0 !default;
+$breeze:                #cfe1f4 !default; // Fuse Breeze
+$ruby:                  #fc5c59 !default; // Fuse Ruby
+$ruby-hover:            #fc5c59 !default; // Fuse Ruby Hover
+$fuse-gray:               $gray-600 !default; // Fuse Ruby Hover
+$fuse-dark:               $gray-800 !default; // Fuse Ruby Hover
+$fuse-dark-active:        $gray-900 !default; // Fuse Ruby Hover
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
-  "blue":           $blue,
-  "indigo":         $indigo,
-  "purple":         $purple,
-  "pink":           $pink,
-  "red":            $red,
-  "orange":         $orange,
-  "yellow":         $yellow,
-  "green":          $green,
-  "teal":           $teal,
-  "cyan":           $cyan,
-  "white":          $white,
-  "gray":           $gray-600,
-  "gray-dark":      $gray-800,
-  // "orr-blue":       $orr-blue,
-  // "dark-blue":      $dark-blue,
-  // "light-blue":     $light-blue,
-  // "pale-blue":      $pale-blue,
-  // "hover-blue":     $hover-blue,
-  // "cream":          $cream,
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $fuse-gray
 ) !default;
 // scss-docs-end colors-map
 
@@ -86,30 +79,31 @@ $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
-$danger:        #fd8205 !default;
+$danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":        $primary,
-  "secondary":      $secondary,
-  "success":        $success,
-  "info":           $info,
-  "warning":        $warning,
-  "danger":         $danger,
-  "light":          $light,
-  "dark":           $dark,
-  "orr-blue":       $orr-blue,
-  "dark-blue":      $dark-blue,
-  "light-blue":     $light-blue,
-  "pale-blue":      $pale-blue,
-  "hover-blue":     $hover-blue,
-  "cream":          $cream,
-  "orange":         $orange, 
-  "light-orange":   $light-orange, 
-  "bright-blue":    $bright-blue, 
+  "primary":            $primary,
+  "secondary":          $secondary,
+  "success":            $success,
+  "info":               $info,
+  "warning":            $warning,
+  "danger":             $danger,
+  "light":              $light,
+  "dark":               $dark,
+  "fuse-blue":          $blue,
+  "fuse-blue-hover":    $blue-hover,
+  "fuse-yellow":        $yellow,
+  "fuse-yellow-hover":  $yellow-hover,
+  "fuse-breeze":        $breeze,
+  "fuse-ruby":          $ruby,
+  "fuse-ruby-hover":    $ruby-hover,
+  "gray":               $fuse-gray,
+  "fuse-dark":          $fuse-dark,
+  "fuse-dark-active":   $fuse-dark-active,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -454,7 +448,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $dark-blue !default;
+$body-color:                $fuse-dark !default;
 $body-text-align:           null !default;
 
 // Utilities maps

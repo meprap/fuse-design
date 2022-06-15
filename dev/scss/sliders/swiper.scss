@@ -3,14 +3,14 @@
         width: 100%;
 
         &-bullet {
-            background-color: $orr-blue;
+            background-color: red;
             width: 1.2rem;
             height: 1.2rem;
             border-radius: 50%;
             margin: 0 0.8rem;
 
             &-active {
-                background-color: $hover-blue;
+                background-color: green;
             }
         }
         &-disabled {

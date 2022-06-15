@@ -12,7 +12,7 @@
     background-color: $white;
     font-size: 1.6rem;
     line-height: 1.5;
-    color: $orr-blue;
+    color: red;
     padding: 1.6rem 2.5rem;
     cursor: pointer;
     user-select: none;
@@ -23,7 +23,7 @@
         right: 2.1rem;
         font-family: '#{$icomoon-font-family}';
         font-size: 1.55rem;
-        color: $secondary;
+        color: red;
         top: 50%;
         transform: translateY(-50%);
         transition: transform 0.2s ease;
@@ -62,7 +62,7 @@
         background-color: transparent;
         font-size: 1.6rem;
         line-height: 1.5;
-        color: $orr-blue;
+        color: red;
         padding: 0.8rem 2rem;
         cursor: pointer;
         user-select: none;

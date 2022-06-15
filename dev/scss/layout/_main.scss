@@ -1,24 +1,14 @@
 .#{$global} {
     &-app {
         min-height: 100vh;
-
-        // @include media-breakpoint-down(md) {
-        //     min-height: auto;
-        //     height: 100%;
-        // }
     }
 
     &-wrap {
         flex: 1 0 auto;
-
-        // @include media-breakpoint-down(md) {
-        //     min-height: auto;
-        //     height: 100%;
-        // }
     }
 
     &-main {
-        background-color: $cream;
+        background-color: $white;
 
         @include media-breakpoint-down(md) {
             min-height: auto;

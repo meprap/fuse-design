@@ -1,14 +1,14 @@
 // Links
 .link {
     &-orr-blue {
-        color: $orr-blue;
+        color: red;
 
         &:hover {
-            color: $hover-blue;
+            color: green;
         }
 
         &:focus {
-            color: $primary;
+            color: brown;
         }
     }
 

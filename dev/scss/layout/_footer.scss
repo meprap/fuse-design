@@ -4,11 +4,11 @@
     @include media-breakpoint-up(md) {
         margin: 0 5.8rem;
     }
-    
+
     @include media-breakpoint-up(lg) {
         margin: 0;
     }
-    
+
     @include media-breakpoint-up(xl) {
         font-size: 1.7rem;
         line-height: 4rem;
@@ -45,7 +45,7 @@
 
             a {
                 &:hover {
-                    color: $hover-blue;
+                    color: red;
                 }
             }
 
@@ -153,7 +153,7 @@
 
         a {
             &:hover {
-                color: $hover-blue;
+                color: red;
             }
         }
 
@@ -338,36 +338,35 @@
             }
         }
 
-        .sent{
-            
-            .wpcf7-response-output{
-                color: $dark-blue;
+        .sent {
+            .wpcf7-response-output {
+                color: green;
                 background-color: $white;
-                border:none!important;
+                border: none !important;
                 height: 4rem;
                 border-radius: 2rem;
                 line-height: 1.5;
                 font-size: 1.2rem;
-                padding: 1rem 2rem!important;
+                padding: 1rem 2rem !important;
                 position: absolute;
                 bottom: 0;
                 right: 0;
-                margin: 0!important;
-                width:100%;
+                margin: 0 !important;
+                width: 100%;
                 box-shadow: $shadow3;
-                @include media-breakpoint-up(md){
+                @include media-breakpoint-up(md) {
                     width: 49.3%;
                 }
-                @include media-breakpoint-up(xl){
+                @include media-breakpoint-up(xl) {
                     left: 0;
                     right: unset;
                     width: 26.8rem;
                 }
             }
 
-            .btn-newsletter{
+            .btn-newsletter {
                 z-index: 9;
-                &::after{
+                &::after {
                     content: '';
                     position: absolute;
                     top: 0;

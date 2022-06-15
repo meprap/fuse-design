@@ -10,7 +10,7 @@
         transition: all 0.3s ease;
 
         &:hover {
-            color: $hover-blue;
+            color: green;
         }
     }
 
@@ -19,7 +19,7 @@
     h3,
     h4,
     h5 {
-        color: $orr-blue;
+        color: red;
 
         &:first-of-type {
             & + * {
@@ -33,13 +33,13 @@
     }
 
     table {
-        border: 0.1rem solid $light-blue;
+        border: 0.1rem solid black;
         width: 100%;
         margin-bottom: 1rem;
 
         th,
         td {
-            border: 0.1rem solid $light-blue;
+            border: 0.1rem solid black;
             padding: 1rem;
             vertical-align: top;
         }
@@ -86,7 +86,6 @@
     h6 {
         font-size: 1.4rem;
         line-height: 2rem;
-        color: $dark-blue;
         font-weight: $font-weight-bold;
 
         @include media-breakpoint-up(xl) {

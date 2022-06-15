@@ -6,7 +6,7 @@
             background-color: $white;
             font-size: 1.4rem;
             line-height: 1.43;
-            color: $orr-blue;
+            color: red;
             padding: 1.4rem 2rem;
             cursor: pointer;
             user-select: none;
@@ -86,7 +86,7 @@
                         background-color: transparent;
                         font-size: 1.6rem;
                         line-height: 1.5;
-                        color: $orr-blue;
+                        color: red;
                         padding: 0.8rem 2rem;
                         cursor: pointer;
                         user-select: none;
@@ -126,7 +126,7 @@
             &-item {
                 @include media-breakpoint-up(md) {
                     // background-image: url('#{$theme-imgpath}blue-paper-texture-web@2x.jpg');
-                    background-color: $orr-blue;
+                    background-color: red;
                     height: 5.6rem;
                     padding: 1.7rem 1rem 1.6rem;
                     font-size: 1.6rem;
@@ -137,7 +137,7 @@
                     box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.24);
 
                     &:hover {
-                        background-color: $hover-blue;
+                        background-color: green;
                         background-image: none;
                     }
 
@@ -176,7 +176,7 @@
                     height: 4.8rem;
                     border-radius: 0.5rem;
                     box-shadow: inset 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.5);
-                    background-color: $orr-blue;
+                    background-color: red;
                     padding: 1.3rem 1rem 1.5rem;
                     font-size: 1.4rem;
                     line-height: 1.43;
@@ -186,7 +186,7 @@
 
                     &:hover,
                     &.is-active {
-                        background-color: $hover-blue;
+                        background-color: green;
                         background-image: none;
                     }
 
@@ -198,7 +198,7 @@
 
                     &.is-passive {
                         background-color: $white;
-                        color: $orr-blue;
+                        color: red;
                         pointer-events: none;
                     }
                 }

@@ -29,21 +29,21 @@
         }
         .active{
             .page-link{
-                color: $hover-blue;
+                color: red;
             }
         }
     }
     .active{
         .page-link{
-            color: $hover-blue;
+            color: red;
         }
     }
 
     .page-link {
-        color: $orr-blue;
+        color: green;
 
         &:hover {
-            color: $hover-blue;
+            color: red;
         }
     }
 
@@ -54,12 +54,12 @@
             padding: 0;
             margin: 0;
             position: relative;
-            color: $orr-blue;
+            color: green;
             display: flex;
             align-items: center;
 
             &:hover {
-                color: $hover-blue;
+                color: red;
             }
 
             &:after,

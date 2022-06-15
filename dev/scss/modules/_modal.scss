@@ -44,7 +44,7 @@
             border: none;
             right: 1.2rem;
             top: 1.6rem;
-            color: $orange;
+            color: red;
             z-index: 1;
 
             @include media-breakpoint-up(md) {
@@ -110,10 +110,10 @@
         &-insights {
             a {
                 font-weight: $font-weight-bold;
-                color: $orr-blue;
+                color: red;
 
                 &:hover {
-                    color: $hover-blue;
+                    color: green;
                 }
             }
         }

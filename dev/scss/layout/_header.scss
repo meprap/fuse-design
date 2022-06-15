@@ -27,11 +27,10 @@
 }
 
 .navbar {
-    border-top: 3.8rem solid $orr-blue;
-    // height: calc(11rem - 3.8rem);
+    border-top: 3.8rem solid red;
     height: 11rem;
     padding: 0.8rem 0 0.6rem;
-    background-color: $cream;
+    background-color: $white;
 
     @include media-breakpoint-up(md) {
         border: none;
@@ -44,7 +43,7 @@
     }
 
     &--overlay {
-        background-image: url("#{$theme-imgpath}white-paper-texture-web@2x.jpg");
+        background-image: url('#{$theme-imgpath}white-paper-texture-web@2x.jpg');
     }
 
     &-brand {
@@ -120,7 +119,7 @@
         @include media-breakpoint-up(md) {
             &:hover {
                 .btn {
-                    background-color: $hover-blue;
+                    background-color: green;
                     color: $white;
                     box-shadow: unset;
                 }
@@ -187,7 +186,7 @@
                     margin-top: 2rem;
                 }
 
-                @include media-breakpoint-between(sm, xl){
+                @include media-breakpoint-between(sm, xl) {
                     right: 0;
                     left: unset;
                 }
@@ -197,7 +196,7 @@
                     // box-shadow: 0.2rem 0.1rem 0.9rem 0 rgba(0, 0, 0, 0.2);
 
                     @include media-breakpoint-up(md) {
-                        background-image: url("#{$theme-imgpath}white-paper-texture-web@2x.jpg");
+                        background-image: url('#{$theme-imgpath}white-paper-texture-web@2x.jpg');
                         border-radius: 2.3rem;
                         box-shadow: 0.2rem 0.1rem 0.9rem 0 rgba(0, 0, 0, 0.2);
                     }
@@ -209,7 +208,7 @@
 
                     @include media-breakpoint-down(md) {
                         padding-bottom: 0.4rem;
-                        background-image: url("#{$theme-imgpath}white-paper-texture-web@2x.jpg");
+                        background-image: url('#{$theme-imgpath}white-paper-texture-web@2x.jpg');
                         gap: 1.1rem 0;
                     }
 
@@ -230,11 +229,11 @@
 
                         .dropdown-item {
                             font-weight: $font-weight-medium;
-                            color: $dark-blue;
+                            color: brown;
 
                             &:hover {
                                 background-color: transparent;
-                                color: $hover-blue;
+                                color: green;
                             }
                         }
                     }
@@ -249,7 +248,7 @@
                 }
 
                 a {
-                    color: $orr-blue;
+                    color: red;
                 }
 
                 img {
@@ -258,29 +257,9 @@
             }
 
             &-toggle {
-                // > span {
-                //     position: relative;
-                //     z-index: 1;
-                // }
-
                 &::after {
                     display: none;
                 }
-
-                // &:hover {
-                //     color: $primary;
-
-                //     &::before {
-                //         content: '';
-                //         background-color: $cream;
-                //         width: calc(100% + 22px);
-                //         height: calc(100% + 15px);
-                //         position: absolute;
-                //         left: 50%;
-                //         top: 50%;
-                //         transform: translate(-50%, -50%);
-                //     }
-                // }
 
                 &.show {
                     @include media-breakpoint-down(md) {
@@ -292,15 +271,11 @@
     }
 
     &-top {
-        // @include media-breakpoint-up(md) {
-        //     visibility: hidden;
-        // }
-
         .btn {
             padding: 0;
             font-size: 1.65rem;
             line-height: 1.27;
-            color: $dark-blue;
+            color: brown;
             background-color: transparent;
             box-shadow: none;
 
@@ -308,11 +283,11 @@
                 padding: 0.8rem 3.2rem;
                 font-size: 1.2rem;
                 line-height: 1.33;
-                color: $orr-blue;
-                background-color: $light-blue;
+                color: red;
+                background-color: green;
                 box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.24);
                 &:hover {
-                    background-color: $hover-blue;
+                    background-color: green;
                     color: $white;
                 }
             }
@@ -329,12 +304,11 @@
     }
 
     &-wrap {
-        // background-color: $cream;
         margin-top: 0.6rem;
         transition: 0.4s all;
 
         @include media-breakpoint-down(md) {
-            background-image: url("#{$theme-imgpath}white-paper-texture-web@2x.jpg");
+            background-image: url('#{$theme-imgpath}white-paper-texture-web@2x.jpg');
             min-width: calc(100% + 7.2rem);
             border-radius: 0 0 2.3rem 2.3rem;
             // box-shadow: 0.2rem 0.8rem 0.9rem 0 rgba(0, 0, 0, 0.15);
@@ -347,16 +321,6 @@
                 overflow: hidden;
                 position: relative;
 
-                // &::before {
-                //     content: '';
-                //     background-image: url('#{$theme-imgpath}texture-modal-01@2x.jpg');
-                //     position: absolute;
-                //     width: 100%;
-                //     height: 100px;
-                //     top: -10px;
-                //     right: 0;
-                // }
-
                 > div {
                     @include media-breakpoint-down(md) {
                         padding: 3.2rem 3.6rem 6.4rem;
@@ -368,7 +332,7 @@
         }
 
         &::after {
-            content: "";
+            content: '';
             position: fixed;
             top: 0;
             left: 0;
@@ -421,14 +385,6 @@
     justify-content: center;
     align-items: center;
 
-    // @include media-breakpoint-up(xl) {
-    //     --size: 3.2rem;
-    // }
-
-    // @include media-breakpoint-up(xl) {
-    //     --size: 4rem;
-    // }
-
     &-input {
         border: 0;
         padding: 1.2rem 1.7rem;
@@ -459,9 +415,8 @@
     }
 
     &:focus-within {
-        // background-color: transparent;
         background-color: $white;
-        border: 0.12rem solid $light-orange;
+        border: 0.12rem solid orange;
         width: 100%;
 
         @include media-breakpoint-up(md) {
@@ -476,8 +431,7 @@
         }
 
         .search-submit {
-            // background-color: green;
-            color: $light-orange;
+            color: orange;
 
             &:hover,
             &:focus {
@@ -485,9 +439,9 @@
             }
         }
     }
-    &:hover:not(:focus-within){
-        background-color: $light-orange;
-        border-color: $light-orange;
+    &:hover:not(:focus-within) {
+        background-color: orange;
+        border-color: orange;
     }
 }
 
@@ -518,7 +472,6 @@
                     opacity: 1;
                     visibility: visible;
                     top: 100%;
-                    // transform: rotateX(0deg) translateY(1.6rem);
                     transform: rotateX(0deg);
                     padding-top: 1.5rem;
                 }
@@ -544,8 +497,3 @@
         }
     }
 }
-
-// .scroll-up:not(.menu-open) .theme-header {
-//   background: red;
-//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
-// }
