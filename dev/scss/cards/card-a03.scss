@@ -1,9 +1,0 @@
-@import '../common-imports';
-
-.card-a03 {
-    @include media-breakpoint-down(md){
-        &:not(&:first-child){
-            margin-top: 4.8rem;
-        }
-    }
-}
