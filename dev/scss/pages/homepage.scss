@@ -1,23 +1,4 @@
 @import '../common-imports';
 
-.homepage {
-    .porthole-module {
-        padding-top: 6.8rem !important;
-
-        @include media-breakpoint-up(xl) {
-            padding-top: 8.8rem !important;
-        }
-    }
-
-    .featured-video-a {
-        padding-bottom: 8rem !important;
-
-        @include media-breakpoint-down(md) {
-            padding-top: 5.6rem !important;
-        }
-
-        @include media-breakpoint-up(xl) {
-            padding-bottom: 11.2rem !important;
-        }
-    }
-}
+// .homepage {
+// }
