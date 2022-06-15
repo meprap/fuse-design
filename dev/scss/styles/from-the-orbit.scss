@@ -1,0 +1,28 @@
+@import '../common-imports';
+@import '../sliders/swiper-a01';
+
+.from-the-orbit {
+    &-header {
+        @include media-breakpoint-up(md) {
+            max-width: 26rem;
+        }
+
+        .b-1 {
+            max-width: 26.9rem;
+            
+            @include media-breakpoint-up(xl) {
+                max-width: 16.4rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                max-width: 19.2rem;
+            }
+        }
+    }
+
+    .card-d01 {
+        .h6 {
+            margin-top: 0 !important;
+        }
+    }
+}

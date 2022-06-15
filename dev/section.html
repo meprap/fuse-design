@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      @@include('includes/head.html',{'pageTitle':'Sections'})
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    'headerSkin': 'leadspace--homepage'
+                })
+            </div>
+            
+            @@include('includes/modules/section/image-and-content-block.html', {
+                'modifier'              : "result",
+                'backgroundColor' : "bg-cream",
+            })
+            
+            @@include('includes/modules/section/section-location-module.html')
+            @@include('includes/modules/section/image-and-content-block.html', {
+                'modifier'              : "service",
+                'backgroundColor' : "bg-light-blue",
+            })
+            
+            @@include('includes/modules/section/image-and-content-block.html', {
+                'modifier'              : "values",
+                'backgroundColor' : "bg-cream",
+            })
+            
+
+            @@include('includes/modules/section/featured-block.html', {
+                'modifier'              : "block1",
+                'backgroundColor' : "bg-cream",
+                'mainHeading' : "Featured Case Study",
+                'headingTextColor' : "text-orr-blue",
+                "descriptionTextColor" : "text-dark-blue",
+                'heading'           : "Lorem ipsum praesent tristique magna sit amet",
+                'description'           : "We recognize the systemic inequities that shape our world, and we're committed to combating them in the nonprofit sector. We strive for equity in our workplace, in our partners' cultures, and in the field of philanthropy as a whole. We know that a diverse organization is a healthier and stronger organization. It's simply better for business.",
+                'imgPath'               : 'featured-story-image@2x.png',
+                'linkShowHide'             : 'd-block',
+            })
+            
+            @@include('includes/modules/section/featured-block.html', {
+                'modifier'              : "block2",
+                'backgroundColor' : "bg-cream",
+                'mainHeading' : "Featured Case Study",
+                'headingTextColor' : "text-orr-blue",
+                "descriptionTextColor" : "text-dark-blue",
+                'heading'           : "Diversity & equity in decision-making.",
+                'description'           : "We recognize the systemic inequities that shape our world, and we're committed to combating them in the nonprofit sector. We strive for equity in our workplace, in our partners' cultures, and in the field of philanthropy as a whole. We know that a diverse organization is a healthier and stronger organization. It's simply better for business.",
+                'imgPath'               : 'screen-shot-2022-01-21-at-10-37-09-am@3x.jpg',
+                'linkShowHide'             : 'd-block',
+            })
+
+            @@include('includes/modules/section/featured-block.html', {
+                'modifier'              : "block3",
+                'backgroundColor' : "bg-cream",
+                'mainHeading' : "Lorem Ipsum Tag • Published Date, 2021",
+                'headingTextColor' : "text-orr-blue",
+                "descriptionTextColor" : "text-dark-blue",
+                'heading'           : "Diversity & equity in decision-making.",
+                'description'           : "We recognize the systemic inequities that shape our world, and we're committed to combating them in the nonprofit sector. We strive for equity in our workplace, in our partners' cultures, and in the field of philanthropy as a whole. We know that a diverse organization is a healthier and stronger organization. It's simply better for business.",
+                'imgPath'               : 'featured-story-image1@2x.png',
+                'linkShowHide'             : 'd-block',
+            })
+            @@include('includes/modules/above-the-fold/leadspace2.html', {
+                'modifier'              : "clients",
+                'h2ShowHide'            : 'd-block',
+                'h3ShowHide'            : 'd-none',
+                'h4ShowHide'            : 'd-none',
+                'pShowHide'             : 'd-none',
+                'logoShowHide'          : 'd-none',
+                'mainHeadingH2'           : "Our partners are as ambitious and passionate as we are.",
+                'imgPath'               : '1591626029614@2x.png',
+            })
+            @@include('includes/modules/above-the-fold/leadspace2.html', {
+                'modifier'              : "careers",
+                'h2ShowHide'            : 'd-none',
+                'h3ShowHide'            : 'd-block',
+                'h4ShowHide'            : 'd-none',
+                'pShowHide'             : 'd-block',
+                'logoShowHide'          : 'd-none',
+                'mainHeadingH3'         : "Careers at Orr Group",
+                'description'           : "We're always looking for smart, hardworking people who share our passion and vision for a better, more equitable world. If you want to help build it, join our team.",
+                'imgPath'               : 'group@2x.png',
+            })
+            @@include('includes/modules/above-the-fold/leadspace2.html', {
+                'modifier'              : "approach",
+                'h2ShowHide'            : 'd-none',
+                'h3ShowHide'            : 'd-none',
+                'h4ShowHide'            : 'd-block',
+                'pShowHide'             : 'd-block',
+                'logoShowHide'          : 'd-block',
+                'logoPath'              : 'group-3@2x.png',
+                'text'                  : 'Learn more about our values.',
+                'mainHeadingH4'         : "First we tell the truth. Then we roll up our sleeves.",
+                'description'           : "At Orr Group, we don't shy away from tough conversations. In fact, we initiate them. First we listen carefully for your truth. Then we help you take an honest look at your strengths and your challenges, your values and your culture, so we can craft solutions that fit you perfectly. It all starts with our curiosity about you. That's one of our core values.",
+                'imgPath'               : 'group-a@2x.png',
+            })
+
+            @@include('includes/modules/section/porthole-module.html',{
+                'moduleType' : 'porthole-module-2',
+                'bgType' : 'porthole-module--alternate',
+                'padding' : 'pt-md-3 pt-10 pb-md-0 pb-6',
+                'titleDisplay' : '',
+                'titleAlign' : '',
+                'title' : 'Our culture',
+                'titleMargin' : 'mb-xl-20 mb-md-6 mb-8',
+            })
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

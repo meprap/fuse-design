@@ -1,0 +1,53 @@
+@import '../common-imports';
+
+.card-video{
+    border-radius: 2.3rem;
+    box-shadow: $card-shadow;
+    &__video{   
+        border-top-left-radius: 2.3rem;
+        border-top-right-radius: 2.3rem;
+        img{
+            object-fit: cover;
+        }
+        &-play{
+            cursor: pointer;   
+            height: 6.2rem;
+            aspect-ratio: 1/1;
+            @include media-breakpoint-up(md){
+                height: 10rem;
+            }
+            @include media-breakpoint-up(xl){
+                height: 10.7rem;
+            }
+        }
+        iframe{
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 2.4rem;
+            border-top-right-radius: 2.4rem;
+        }
+        &-poster{     
+            border-top-left-radius: 2.3rem;
+            border-top-right-radius: 2.3rem;
+            img{
+                border-top-left-radius: 2.3rem;
+                border-top-right-radius: 2.3rem;
+                overflow: hidden;
+            }
+        }
+    }
+    &__info{
+
+        span:not(:last-of-type):after{
+            content: "\2022";
+            margin:0 0.5rem
+        }
+
+    }
+ 
+}
+.modal{
+    iframe{
+        border-radius: 0;
+    }
+}

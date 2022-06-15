@@ -1,0 +1,14 @@
+@import '../common-imports';
+
+.results {
+    .image-and-content {
+        margin-top: 7.4rem;
+        &-description{
+            .h4{
+                a{
+                    font-weight: 800!important;
+                }
+            }
+        }
+    }
+}

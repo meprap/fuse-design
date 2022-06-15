@@ -1,0 +1,58 @@
+@import "../common-imports";
+
+.related-article {
+    &__card {
+        &__item {
+            max-width: 100%;
+        }
+    }
+
+    .swiper-a03 {
+        &-wrap {
+            &::before {
+                display: none;
+            }
+        }
+        .swiper {
+            overflow: visible;
+            &-slide {
+                width: 30.3rem;
+                @include media-breakpoint-up(md){
+                    width: 31%;
+                }
+                &:not(:first-child) {
+                    @include media-breakpoint-up(md){
+                        margin-left: 1.6rem;
+                    }
+                    @include media-breakpoint-up(lg){
+                        margin-left: 2.4rem;
+                    }
+                    @include media-breakpoint-up(xl){
+                        margin-left: 3.2rem;
+                    }
+                }    
+            }
+            &-pagination {
+                @include media-breakpoint-up(md){
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    .card-d01 {
+        .card-figure {
+            height: 22.2rem;
+            @include media-breakpoint-up(md) {
+                height: 14.4rem;
+            }
+            @include media-breakpoint-up(lg) {
+                height: 25rem;
+            }
+        }
+        .card-eyebrow {
+            font-size: 1.2rem;
+        }
+    }
+}
+

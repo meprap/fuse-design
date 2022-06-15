@@ -1,0 +1,27 @@
+@import '../common-imports';
+
+.talent{
+    .tabbed-text{
+        &__list{
+            &--two-col {
+                ul {
+                    li{
+                        &:nth-child(even) {
+                            width: 100%;
+                            @include media-breakpoint-up(lg) {
+                                width: 33.9%;
+                            }
+                        }
+                        &:nth-child(odd) {
+                            width: 100%;
+                            @include media-breakpoint-up(lg) {
+                            width: 63%;
+                            margin-right: 3%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

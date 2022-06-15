@@ -1,0 +1,86 @@
+@import '../common-imports';
+
+.card-quote {
+    .card {
+        &-author {
+            font-weight: $font-weight-bold;
+        }
+
+        &-title,
+        &-name {
+            font-weight: 1.2rem;
+            line-height: 1.5;
+
+            @include media-breakpoint-up(md) {
+                font-weight: $font-weight-medium;
+                font-weight: 1.4rem;
+                line-height: 1.43;
+            }
+
+            @include media-breakpoint-up(md) {
+                font-weight: 1.6rem;
+                line-height: 1;
+            }
+        }
+ 
+        &-figure {
+            @include media-breakpoint-up(md) {
+                border-radius: 50%;
+                overflow: hidden;
+                position: relative;
+                height: 100%;
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    box-shadow: inset 6px 6px 15px 2px rgba(0, 0, 0, 0.5);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                min-width: 10.4rem;
+                max-width: 10.4rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                min-width: 21.8rem;
+                max-width: 21.8rem;
+            }
+            span{
+                left: 0;
+                @include media-breakpoint-up(md) {
+                    left: -2rem;
+                }
+            }
+        }
+
+        &-figure-sm {
+            width: 6.6rem;
+        }
+
+        &-body {
+            .b-1 {
+                @include media-breakpoint-down(md) {
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                }
+            }
+            
+            span {
+                left: 0;
+                @include media-breakpoint-up(md) {
+                    left: -1.5rem;
+                }
+            }
+        }
+    }
+
+    &--alternate {
+        max-width: 73.5rem;
+        margin-left: auto;
+        .card-figure {
+            min-width: 100%;
+        }
+    }
+}

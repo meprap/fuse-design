@@ -1,0 +1,105 @@
+@import '../common-imports';
+
+.filter {
+    background-image: url('#{$theme-imgpath}blue-paper-texture-web@2x.jpg');
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.24);
+
+    &-options {
+        @include media-breakpoint-up(md) {
+            font-weight: $font-weight-medium;
+        }
+
+        .select-selected {
+            background-color: transparent;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0 3rem 0 0;
+            color: $white;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 1.4rem;
+                line-height: 1.43;
+            }
+
+            @include media-breakpoint-down(md) {
+                position: relative;
+                display: inline-flex;
+            }
+
+            &::after {
+                color: $white;
+                right: 0;
+                font-size: 2.1rem;
+            }
+        }
+
+        .select-items {
+            background-image: url('#{$theme-imgpath}white-paper-texture-web@2x.jpg');
+            border-radius: 0 0 .5rem .5rem;
+            box-shadow: none;
+            padding: 2.4rem 3.2rem 2.8rem;
+            top: calc(100% + 2rem);
+            box-shadow: 0.2rem 0.1rem 0.9rem 0 rgba(0, 0, 0, 0.2);
+
+            @include media-breakpoint-down(md) {
+                top: auto;
+                position: relative;
+                margin-top: 1.2rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                width: 28rem;
+                left: -3.2rem;
+            }
+
+            > div {
+                padding: 0;
+                color: $dark-blue;
+
+                &:not(:first-child) {
+                    margin-top: 2rem;
+                }
+
+                &:hover {
+                    color: $hover-blue;
+                }
+            }
+        }
+    }
+
+    &-option-list {
+        > li {
+            @include media-breakpoint-up(md) {
+                margin-left: 3.6rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-left: 6rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                margin-left: 10rem;
+            }
+
+            &:last-child {
+                .select-items {
+                    @include media-breakpoint-up(md) {
+                        left: auto;
+                        right: -3.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &--alternative {
+        .filter-option-list {
+            > li {
+                @include media-breakpoint-up(xl) {
+                    margin-left: 8rem;
+                }
+            }
+        }
+    }
+}

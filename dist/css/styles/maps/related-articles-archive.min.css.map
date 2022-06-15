@@ -1,0 +1,1 @@
+{"version":3,"sources":["related-articles-archive.scss"],"names":[],"mappings":"AAEA,oCAEY,UAAO,CAId,yBANL,oCAIY,SAAM,CAAA","file":"../related-articles-archive.min.css","sourcesContent":["@import '../common-imports';\n\n.related-articles-archive{\n    .card-d01{\n            width: 100%;\n        @include media-breakpoint-up(md){\n            width:31%;\n        }\n    }\n}\n"]}

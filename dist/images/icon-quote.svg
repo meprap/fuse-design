@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Quote Icon</title>
+    <defs>
+        <circle id="path-1" cx="16" cy="16" r="16"></circle>
+        <filter x="-4.7%" y="-4.7%" width="109.4%" height="109.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="1" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M9.820168,24.089984 C11.2335333,24.089984 12.3703707,23.6828733 13.23068,22.868652 C14.0909893,22.0544307 14.521144,20.9713627 14.521144,19.619448 C14.521144,18.3904347 14.1601213,17.3918613 13.438076,16.623728 C12.7160307,15.8555947 11.894128,15.471528 10.972368,15.471528 C10.419312,15.471528 9.95075067,15.5483413 9.566684,15.701968 C9.18261733,15.8555947 8.85232,16.1321227 8.575792,16.531552 C8.575792,16.070672 8.62188,15.65588 8.714056,15.287176 C8.95985867,14.2425147 9.55132133,13.4513373 10.488444,12.913644 C11.4255667,12.3759507 12.6468987,12.107104 14.15244,12.107104 L14.15244,12.107104 L14.15244,8.143536 C10.834104,8.29716267 8.40680267,9.26501067 6.870536,11.04708 C5.33426933,12.8291493 4.566136,14.96456 4.566136,17.453312 C4.566136,19.4504587 5.01165333,21.0558573 5.902688,22.269508 C6.79372267,23.4831587 8.09954933,24.089984 9.820168,24.089984 Z M21.111728,24.089984 C22.5250933,24.089984 23.6619307,23.6828733 24.52224,22.868652 C25.3825493,22.0544307 25.812704,20.9713627 25.812704,19.619448 C25.812704,18.3904347 25.4516813,17.3918613 24.729636,16.623728 C24.0075907,15.8555947 23.185688,15.471528 22.263928,15.471528 C21.710872,15.471528 21.2423107,15.5483413 20.858244,15.701968 C20.4741773,15.8555947 20.14388,16.1321227 19.867352,16.531552 C19.867352,16.070672 19.91344,15.65588 20.005616,15.287176 C20.2514187,14.2425147 20.8428813,13.4513373 21.780004,12.913644 C22.7171267,12.3759507 23.9384587,12.107104 25.444,12.107104 L25.444,12.107104 L25.444,8.143536 C22.125664,8.29716267 19.6983627,9.26501067 18.162096,11.04708 C16.6258293,12.8291493 15.857696,14.96456 15.857696,17.453312 C15.857696,19.4504587 16.3032133,21.0558573 17.194248,22.269508 C18.0852827,23.4831587 19.3911093,24.089984 21.111728,24.089984 Z" id="path-3"></path>
+        <filter x="-4.7%" y="-6.3%" width="118.8%" height="125.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Styleguides" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-617.000000, -63.000000)">
+            <g id="Quote-Icon" transform="translate(617.000000, 63.000000)">
+                <g id="Oval">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+                <g id="“" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#065094" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

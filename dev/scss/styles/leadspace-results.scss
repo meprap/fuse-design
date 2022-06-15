@@ -1,0 +1,119 @@
+@import '../common-imports';
+
+.leadspace-results {
+    .container {
+        > div {
+            padding-top: 13rem;
+
+            @include media-breakpoint-up(md) {
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-top: 16.2rem;
+            }
+
+            &::after {
+                content: '';
+                // background-color: red;
+                background-image: url('#{$theme-imgpath}light-blue-paper-texture-web@2x.jpg');
+                box-shadow: 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.24);
+                width: calc(100% + 1.6rem);
+                height: calc(100% - 16.3rem);
+                position: absolute;
+                top: 20.3rem;
+                left: -3.8rem;
+                z-index: 1;
+
+                @include media-breakpoint-up(md) {
+                    width: calc(100% - 6rem);
+                    height: calc(100% - 16rem);
+                    top: 19.6rem;
+                    left: 0;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    width: calc(100% - 8rem);
+                    height: calc(100% - 24rem);
+                    top: 26.3rem;
+                }
+            }
+        }
+    }
+
+    .leadspace {
+        &-description {
+            order: 2;
+            margin-top: 3.2rem;
+            max-width: 95%;
+            @include media-breakpoint-up(md) {
+                max-width: 28rem;
+                margin-top: 0;
+                // margin-bottom: 4.4rem;
+                margin-left: 4.4rem;
+                margin-bottom: 3.8rem;
+                padding-top: 10.6rem;
+                order: 1;
+            }
+
+            @include media-breakpoint-between(md, xl){
+                align-self: center;
+            }
+            
+            @include media-breakpoint-up(xl) {
+                max-width: 33.5rem;
+                margin-left: 5.6rem;
+                margin-bottom: 6.8rem;
+                padding-top: 21.9rem;
+            }
+        }
+
+        &-figure {
+            order: 1;
+
+            @include media-breakpoint-down(md) {
+                margin-left: -0.4rem;
+                margin-right: -0.4rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                margin-left: 0;
+                flex: 1;
+                order: 2;
+                margin-left: 3.6rem;
+                transform: translateX(.4rem);
+            }
+
+            @include media-breakpoint-up(xl) {
+                margin-left: 4.2rem;
+                transform: translateX(.8rem);
+            }
+        }
+    }
+
+    h3,
+    .h3 {
+        @include media-breakpoint-down(md) {
+            font-size: 2.9rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-right: 4rem;
+        }
+    }
+
+    p {
+        max-width: 26.4rem;
+        margin-top: 1.2rem;
+
+        @include media-breakpoint-up(xl) {
+            max-width: 37.6rem;
+            margin-top: 2rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 3.2rem;
+        }
+    }
+}

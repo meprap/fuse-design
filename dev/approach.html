@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'ORR Group - Approach'})
+    </head>
+    <body class="approach">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html')
+
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/leadspace2.html', {
+                        'modifier'              : "approach",
+                        'h2ShowHide'            : 'd-none',
+                        'h3ShowHide'            : 'd-none',
+                        'h4ShowHide'            : 'd-block',
+                        'pShowHide'             : 'd-block',
+                        'logoShowHide'          : 'd-block',
+                        'logoPath'              : 'group-3@2x.png',
+                        'linkPath'              : '#',
+                        'text'                  : 'Learn more about our values.',
+                        'mainHeadingH4'         : "First we tell the truth. Then we roll up our sleeves.",
+                        'description'           : "At Orr Group, we don't shy away from tough conversations. In fact, we initiate them. First we listen carefully for your truth. Then we help you take an honest look at your strengths and your challenges, your values and your culture, so we can craft solutions that fit you perfectly. It all starts with our curiosity about you. That's one of our core values.",
+                        'imgPath'               : 'hero-approach@2x.png',
+                    })
+
+                    @@include('includes/modules/section/text-block.html', {
+                        'skin'          : 'text-block--texture-light',
+                        'h5Heading'     :  'Working with Orr Group',
+                        'h6Heading'     :  "",
+                        'showHideH5'    :  "",
+                        'showHideH6'    :  "d-none",
+                        'paragraph'     :  "We love partnering with nonprofits who are driven by ambition and vision, for a better way of doing things and for a better world. Because we are, too. We do more than preserve your status quo. Our business mindset helps you forge improvement and growth. And we pass that mindset and commitment on to you, so you can sustain it.",
+                    })
+                    
+                    @@include('includes/modules/section/from-the-orbit.html', {
+                        'h3Heading'     : 'Our Services',
+                        'subTitle'      : 'Learn about the full range of services Orr Group offers.',
+                    })
+                    
+                </main>
+                @@include('includes/footer.html')
+            </div>
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

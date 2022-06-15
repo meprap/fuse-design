@@ -1,0 +1,45 @@
+@import '../common-imports';
+
+.case-list {
+    &-members {
+        > div {
+            @include media-breakpoint-up(md) {
+                flex: 0 0 auto;
+                width: 33.33333%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .card-d01 {
+        .card-body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 12rem;
+        }
+        .h6,
+        h6 {
+            font-size: 1.6rem;
+            line-height: 1.25;
+            margin: 0 !important;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.4rem;
+                line-height: 1.43;
+            }
+
+            @include media-breakpoint-up(xl) {
+                font-size: 1.85rem;
+                line-height: 1.3;
+            }
+        }
+    }
+    &-footer{
+        a{
+            &:focus-within{
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@import '../common-imports';
+
+.our-story {
+    .video-module {
+        @include media-breakpoint-up(xl) {
+            padding-bottom: 7.2rem !important;
+        }
+    }
+}

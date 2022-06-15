@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'ORR Group - Our Clients'})
+    </head>
+    <body class="clients">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html')
+                
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/leadspace2.html', {
+                        'modifier'              : "clients",
+                        'h2ShowHide'            : 'd-block',
+                        'h3ShowHide'            : 'd-none',
+                        'h4ShowHide'            : 'd-none',
+                        'pShowHide'             : 'd-none',
+                        'logoShowHide'          : 'd-none',
+                        'mainHeadingH2'         : "Our partners are as ambitious and passionate as we are.",
+                        'imgPath'               : 'leadspace-clients@2x.jpg',
+                    })
+
+                    @@include('includes/modules/section/quote.html', {
+                        'number' : 'more',
+                        'quoteSkin' : 'quote--alternate'
+                    })
+
+                    @@include('includes/modules/section/client-list.html', {
+                        "team" : {
+                            "list": [
+                                {
+                                    'imageName'         : 'DiabetesResearchInstitute.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                                {
+                                    'imageName'         : 'infographic-xs@2x.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                                {
+                                    'imageName'         : 'leadspace-talent@2x.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                                {
+                                    'imageName'         : 'logo-als-hd-test@2x.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                                {
+                                    'imageName'         : 'client-achieve.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                                {
+                                    'imageName'         : 'client-als.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                                {
+                                    'imageName'         : 'client-arthritis.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                                {
+                                    'imageName'         : 'client-board-source.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                                {
+                                    'imageName'         : 'client-bridges.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                                {
+                                    'imageName'         : 'client-city-harvest.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                                {
+                                    'imageName'         : 'client-council-for-economic-education.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                                {
+                                    'imageName'         : 'client-drif.png',
+                                    'clientName'        : 'Name of client',
+                                },
+                            ]
+                        },
+                    })
+
+                    @@include('includes/modules/section/video-module.html',{
+                        'text'          : "Lorem Ipsum Video Title/Intro goes here.",
+                        'posterImage'   : 'video-module.png',
+                    })
+
+                    @@include('includes/modules/section/cta-banner.html',{
+                        'modifier'          : 'cta-banner--stack',
+                        'skin'              : 'cta-banner--light-textured',
+                        'alignment'         : 'cta-banner--center',
+                        'gutters'           : 'cta-banner--lg',
+                        'img'               : 'icon-folder.svg',
+                        'altImg'            : 'Learn more about Orr Group',
+                        'h5ShowHide'        : 'd-none',
+                        'h7ShowHide'        : 'd-none',
+                        'h6ShowHide'        : 'd-block',
+                        'h6LinkText'        : '',
+                        'paraShowHide'      : 'd-none',
+                        'pLinkText'         : '',
+                        'listShowHide'      : 'd-none',
+                    })
+
+                </main>
+                @@include('includes/footer.html')
+            </div>
+            @@include('includes/scripts.html')
+            @@include('includes/modules/section/modal-team.html',{
+                'hasQuote':''
+            })
+        </div>
+
+    </body>
+</html>

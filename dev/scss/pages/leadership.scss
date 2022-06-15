@@ -1,0 +1,62 @@
+@import '../common-imports';
+
+.leadership {
+    .bullet-list {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+
+        ul {
+            margin-bottom: 0;
+        }
+        &--icon{
+            ul{
+                li{
+                    i{
+                        font-size: 4.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .infographic2 {
+        margin-top: 5.8rem;
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 6.8rem;
+        }
+    }
+
+    .cta-banner,
+    .video-module {
+        margin-top: 5rem;
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 5.6rem;
+        }
+    }
+
+    .video-module {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .related-article {
+        padding-bottom: 4rem !important;
+        margin-top: 5rem;
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 10rem;
+            padding-bottom: 4rem !important;
+        }
+    }
+
+    .leadspace--leadership{
+        .container{
+            >div{
+                padding-bottom: 2rem!important;
+            }
+        }
+    }
+
+}

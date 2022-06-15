@@ -1,0 +1,36 @@
+<section class="bullet-list-cta py-10 py-md-5 pt-lg-18 pb-lg-6">
+    <div class="container">
+        <p class="fw-bold mb-6 text-orr-blue">
+            @@sectionTitle
+        </p>
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="bullet-list @@bulletlistModifier @@bulletlistTwoColModifier">
+                    <ul class="flex-wrap">
+                        @@for (var i = 0; i < results.list.length; i++) { <li class="align-items-center">
+                            @@include('./../repeator/bullet-list-content.html', `+(JSON.stringify(results.list[i]))+`)
+                            </li>
+                            }
+                    </ul>
+                    <p class="@@paragraphShowHide">@@paragraph</p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <article class="cta-banner cta-banner--inline">
+                    <div class="cta-banner-content">
+                        <div class="d-flex align-items-center @@justifyAlignment">
+                            <figure class="cta-banner-figure me-lg-6 me-4 mb-md-0">
+                                <img src="images/@@cardImg" alt="@@altImg">
+                            </figure>
+                            <article class="cta-banner-article">
+                                <p class="text-orr-blue">
+                                    <a href="#" title="Get in touch with us today.">@@link</a>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

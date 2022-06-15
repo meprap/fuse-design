@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'ORR Group - Knowledge center'})
+</head>
+
+<body class="knowledge-center">
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html')
+
+            <main class="theme-main">
+                @@include('includes/modules/section/featured-block.html', {
+                    'modifier'              : "block1",
+                    'backgroundColor'       : "bg-cream",
+                    'mainHeading'           : "Featured Story",
+                    'headingTextColor'      : "text-orr-blue",
+                    "descriptionTextColor"  : "text-dark-blue",
+                    'heading'               : "Lorem ipsum praesent tristique magna sit amet",
+                    'description'           : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula euismod diam, at tempus augue. Quisque et orci malesuada justo tincidunt finibus. Donec massa lorem, hendrerit eget metus sit amet. Quisque et orci malesuada justo tincidunt finibus.",
+                    'imgPath'               : 'featured-story-image@2x.png',
+                    'linkShowHide'          : 'd-block',
+                })
+            
+            
+                @@include('includes/modules/section/cta-banner.html',{
+                    'modifier'          : 'cta-banner--inline',
+                    'skin'              : 'cta-banner--cream',
+                    'alignment'         : 'cta-banner--center',
+                    'gutters'           : 'cta-banner--md',
+                    'img'               : 'bulb-icon.svg',
+                    'altImg'            : '',
+                    'h5ShowHide'        : 'd-block',
+                    'h6ShowHide'        : 'd-none',
+                    'h7ShowHide'        : 'd-none',
+                    'paraShowHide'      : 'd-none',
+                    'pLinkText'         : '',
+                    'listShowHide'      : 'd-none',
+                })
+            
+                @@include('includes/modules/section/featured-category-slider.html')
+
+                @@include('includes/modules/section/featured-block.html', {
+                    'modifier'                  : "block3",
+                    'backgroundColor'           : "bg-cream",
+                    'mainHeading'               : "Lorem Ipsum Tag • Published Date, 2021",
+                    'headingTextColor'          : "text-orr-blue",
+                    "descriptionTextColor"      : "text-dark-blue",
+                    'heading'                   : "Lorem ipsum praesent tristique magna sit amet",
+                    'description'               : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula euismod diam, at tempus augue. Quisque et orci malesuada justo tincidunt finibus. Donec massa lorem, hendrerit eget metus sit amet. Quisque et orci malesuada justo tincidunt finibus.",
+                    'imgPath'                   : 'featured-story-image1@2x.png',
+                    'linkShowHide'              : 'd-block',
+                })
+                
+                @@include('includes/modules/section/related-article.html',{
+                    'title'     : 'Lorem articles about Strategy',
+                    'bgColor'   : 'bg-cream'
+                })
+                @@include('includes/modules/section/video-category-slider.html')
+
+                @@include('includes/modules/section/related-article.html',{
+                    'title'     : 'Lorem articles about Strategy',
+                    'bgColor'   : 'bg-cream'
+                })
+                
+                @@include('includes/modules/section/video-category-thumbnail.html',{
+                    'title'     : 'Lorem featured video category title',
+                    'bgColor'   : 'bg-cream'
+                })
+
+                @@include('includes/modules/section/search-banner.html')
+
+                @@include('includes/modules/section/filter-topic.html')
+
+                @@include('includes/modules/section/newsletter-archive.html')
+            </main>
+            @@include('includes/footer.html')
+        </div>
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

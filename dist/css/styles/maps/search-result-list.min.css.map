@@ -1,0 +1,1 @@
+{"version":3,"sources":["search-result-list.scss"],"names":[],"mappings":"AAAA,yCAGY,4BAAe","file":"../search-result-list.min.css","sourcesContent":[".search-result-list{\n    .card-d02{\n        &:last-child{\n            border-bottom: none!important;\n        }\n    }\n}\n"]}

@@ -1,0 +1,32 @@
+@import '../common-imports';
+
+.planned-giving {
+    .text-block,
+    .cta-banner {
+        margin-top: 3rem;
+        @include media-breakpoint-up(md) {
+            margin-top: 6rem;
+        }
+        @include media-breakpoint-up(xl) {
+            margin-top: 8rem;
+        }
+    }
+
+    .quote {
+        @include media-breakpoint-up(xl) {
+            padding-top: 4.8rem !important;
+            padding-bottom: 4.8rem !important;
+        }
+    }
+
+    .text-block {
+        .post-basic {
+            @include media-breakpoint-up(md) {
+                max-width: 64.4rem;
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+        }
+    }
+}

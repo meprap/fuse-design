@@ -1,0 +1,22 @@
+<section class="client-list py-16 pt-xl-22 pb-xl-24">
+    <div class="container">
+        @@include('../section/filter.html', {
+            'filter--filterModifier'      : 'filter--alternative',
+            'filterTitle'                 : "Our Clients"
+        })
+
+        <div class="client-list-wrap">
+            <div class="client-list-members d-flex flex-wrap mb-n4 mx-n2">
+                @@for (var i = 0; i < team.list.length; i++) {
+                    <div class="client-list-item mb-4 px-2">
+                        @@include('../cards/card-client.html', `+(JSON.stringify(team.list[i]))+`)
+                    </div>
+                }
+            </div>
+
+            <div class="client-list-footer mt-8 mt-md-10 mt-xl-14 text-center">
+                <button type="button" href="#" class="btn btn-lg btn-light-blue">Load more</button>
+            </div>
+        </div>
+    </div>
+</section>

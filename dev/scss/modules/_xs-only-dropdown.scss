@@ -1,0 +1,215 @@
+.xs-only-dropdown {
+    .dropdown {
+        &-toggle {
+            border-radius: 2.95rem;
+            box-shadow: inset 0.2rem 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.24);
+            background-color: $white;
+            font-size: 1.4rem;
+            line-height: 1.43;
+            color: $orr-blue;
+            padding: 1.4rem 2rem;
+            cursor: pointer;
+            user-select: none;
+            display: block;
+            transition: none !important;
+
+            &::after {
+                content: $icon-down-arrow;
+                border: none;
+                font-family: '#{$icomoon-font-family}';
+                font-size: 2rem;
+                font-weight: 600;
+                color: $primary;
+                position: absolute;
+                right: 2.1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: transform 0.2s ease;
+            } /*style the arrow inside the select element:*/
+
+            &.show {
+                border-bottom: none;
+                border-radius: 2.95rem 2.95rem 0 0;
+                position: relative;
+                z-index: 100;
+                box-shadow: none;
+
+                &::after {
+                    transform: translateY(-50%) rotate(180deg);
+                } /*point the arrow upwards when the select box is open (active):*/
+            }
+
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
+
+        &-menu {
+            @include media-breakpoint-down(md) {
+                border: none;
+                border-radius: 0 0 2.95rem 2.95rem;
+                box-shadow: inset 0.1rem -0.4rem 1rem 0 rgba(0, 0, 0, 0.24);
+                border-top: none;
+                background-color: $white;
+                width: 100%;
+                position: absolute;
+                top: -0.5rem !important;
+                left: 0;
+                right: 0;
+                padding: 2rem 0 3.6rem;
+                z-index: 99;
+            }
+
+            @include media-breakpoint-up(md) {
+                background-color: transparent;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                position: relative;
+                border: none;
+                padding: 0;
+                margin: 0 -0.8rem -1.6rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                margin: 0 -0.6rem -1.2rem;
+            }
+
+            > li {
+                @include media-breakpoint-up(md) {
+                    flex: 0 0 auto;
+                    text-align: center;
+                }
+
+                > a {
+                    @include media-breakpoint-down(md) {
+                        background-color: transparent;
+                        font-size: 1.6rem;
+                        line-height: 1.5;
+                        color: $orr-blue;
+                        padding: 0.8rem 2rem;
+                        cursor: pointer;
+                        user-select: none;
+                        transition: all 0.2s ease;
+
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+
+            &.show {
+                box-shadow: none;
+            }
+        }
+    }
+
+    &--half {
+        .dropdown {
+            &-menu {
+                > li {
+                    @include media-breakpoint-up(md) {
+                        width: 25%;
+                        padding: 0 0.8rem;
+                        margin-bottom: 1.6rem;
+                    }
+
+                    @include media-breakpoint-up(xl) {
+                        width: 20%;
+                        padding: 0 0.6rem;
+                        margin-bottom: 1.2rem;
+                    }
+                }
+            }
+
+            &-item {
+                @include media-breakpoint-up(md) {
+                    // background-image: url('#{$theme-imgpath}blue-paper-texture-web@2x.jpg');
+                    background-color: $orr-blue;
+                    height: 5.6rem;
+                    padding: 1.7rem 1rem 1.6rem;
+                    font-size: 1.6rem;
+                    line-height: 1.3;
+                    font-weight: $font-weight-semi-bold;
+                    color: $white;
+                    border-radius: 3.6rem;
+                    box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.24);
+
+                    &:hover {
+                        background-color: $hover-blue;
+                        background-image: none;
+                    }
+
+                    &:focus-within {
+                        background-color: $primary;
+                        background-image: none;
+                        box-shadow: inset 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+        }
+    }
+
+    &--full {
+        .dropdown {
+            &-menu {
+                > li {
+                    @include media-breakpoint-up(md) {
+                        width: 16.66666%;
+                        padding: 0 0.8rem;
+                        margin-bottom: 1.2rem;
+                    }
+
+                    @include media-breakpoint-up(xl) {
+                        width: 8.33333%;
+                        padding: 0 0.6rem;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &-item {
+                text-transform: uppercase;
+
+                @include media-breakpoint-up(md) {
+                    height: 4.8rem;
+                    border-radius: 0.5rem;
+                    box-shadow: inset 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.5);
+                    background-color: $orr-blue;
+                    padding: 1.3rem 1rem 1.5rem;
+                    font-size: 1.4rem;
+                    line-height: 1.43;
+                    font-weight: $font-weight-bold;
+                    color: $white;
+                    margin-bottom: 0;
+
+                    &:hover,
+                    &.is-active {
+                        background-color: $hover-blue;
+                        background-image: none;
+                    }
+
+                    &:focus-within {
+                        background-color: $primary;
+                        background-image: none;
+                        box-shadow: inset 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.5);
+                    }
+
+                    &.is-passive {
+                        background-color: $white;
+                        color: $orr-blue;
+                        pointer-events: none;
+                    }
+                }
+
+                @include media-breakpoint-up(xl) {
+                    height: 5.6rem;
+                    font-size: 1.85rem;
+                    line-height: 1.3;
+                    padding: 1.7rem 1rem 1.3rem;
+                }
+            }
+        }
+    }
+}

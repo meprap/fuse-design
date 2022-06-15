@@ -1,0 +1,34 @@
+<article class="card-d01 card-d01--@@cardAlign d-flex h-100 flex-column position-relative">
+    <!-- 
+        @@cardAlign:
+        left | center 
+    -->
+    <a href="@@linkURL" class="card-d01-btn w-100 h-100 position-absolute position-lt-0 zindex-2" title="@@cardTitle">
+        @@cardTitle
+    </a>
+
+    <div class="card-video @@cardVideoShowHide ratio ratio-16x9 position-relative zindex-3">
+        <button class="btn-control position-absolute zindex-3"><i class="icon-play-btn"></i></button>
+        <figure class="card-figure zindex-2 h-100 w-100">
+            <img loading="lazy" class="w-100 h-100 object-fit" src="images/Orr-Video-Fallback-thumbnail.png">
+        </figure>
+        <iframe class="iframe-video bg-dark" src="@@videoPath" title="YouTube video" allowfullscreen allow="autoplay"></iframe>
+    </div>
+
+    <figure class="card-figure @@cardFigureShowHide">
+        <img class="w-100 h-100 object-fit" src="images/@@imgName" alt="@@cardTitle" />
+    </figure>
+
+    <div class="card-body my-auto pt-4 pb-6 px-8 px-md-4 pt-xl-6 pb-xl-7 px-xl-8">
+        <div>
+            <date class="card-eyebrow @@cardEyebrowShowHide text-primary body-2 position-relative zindex-10">
+                <a class="position-relative" href="#" title="@@tag">@@tag</a>
+                <a class="position-relative" href="#" title="@@date">@@date</a>
+            </date>
+            <h5 class="h5 @@h5ShowHide text-orr-blue mt-3 mb-6 mb-md-5 mb-xl-4">@@cardH5</h5>
+            <h6 class="h6 @@h6ShowHide text-orr-blue mt-2 mt-md-1 mb-6 mb-md-5 mb-xl-4">@@cardTitle</h6>
+            <h6 class="h7 @@h7ShowHide text-orr-blue mt-1 mt-xl-2 mt-lg-2 mb-2 mb-xl-6">@@cardH7</h6>
+            <p class="b-1 @@b1ShowHide truncate--3-line">@@cardDesc</p>
+        </div>
+    </div>
+</article>

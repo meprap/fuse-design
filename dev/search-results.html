@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'ORR Group - Search Results'})
+    </head>
+    <body class="search-results">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html')
+
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/leadspace5.html',{
+                        'section-spacer' : 'pt-xl-17 pt-md-14 pb-md-15 pt-10 pb-8',
+                        'figure-display' : '',
+                        'image' : 'hiker-orr-group-strategy-transparent-background-pl-01@2x.png',
+                        'article-display1' : 'd-sm-block d-none',
+                        'description-title-display' : '',
+                        'title' : 'Search results for:',
+                        'article-display2' : 'd-sm-none',
+                        'heading' : 'Lorem Ipsum',
+                    })
+
+                    @@include('includes/modules/section/search-result-list.html')
+                    
+                </main>
+                @@include('includes/footer.html')
+            </div>
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

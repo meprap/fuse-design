@@ -1,0 +1,21 @@
+@import '../common-imports';
+
+.not-found{
+    padding-top: 16rem;
+    &--description{
+        @include media-breakpoint-up(md) {
+            margin-right: 7.3rem;
+        }
+        p{
+            color: $dark-blue;
+            a{
+                text-decoration: underline;
+                font-weight: 500;
+            }
+        }
+    }
+    &--figure{
+        max-width: 62.3rem;
+        width: 100%;
+    }
+}

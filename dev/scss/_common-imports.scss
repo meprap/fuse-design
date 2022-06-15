@@ -1,0 +1,18 @@
+// 1. Global
+@import 'global/path';
+
+// 2. Functions
+@import '../../node_modules/bootstrap/scss/functions';
+
+// 3. Vendors
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+
+// 4. Mixins
+@import 'mixins/mixins';
+
+// 5. Global Variables
+@import 'base/global-vars';
+
+// 6. Utilities
+// @import 'utilities/placeholders';

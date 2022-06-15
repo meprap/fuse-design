@@ -1,0 +1,10 @@
+@import '../common-imports';
+
+.related-articles-archive{
+    .card-d01{
+            width: 100%;
+        @include media-breakpoint-up(md){
+            width:31%;
+        }
+    }
+}

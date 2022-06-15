@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'ORR Group - About'})
+    </head>
+    <body class="about">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    'headerSkin': 'leadspace--homepage'
+                })
+
+                <!-- Offcanvas Menu -->
+                <!-- @@include('includes/offcanvas.html') -->
+
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/leadspace.html', {
+                        'modifier'              : "about",
+                        'h3ShowHide'            : 'd-block',
+                        'h3OptionalShowHide'    : 'd-none',
+                        'h5ShowHide'            : "d-none",
+                        'pShowHide'             : 'd-block',
+                        'mainHeading'           : "We're uncomfortable with the status quo, and we like it that way",
+                        'mainHeadingOptional'   : "",
+                        'subHeading'            : '',
+                        'description'           : "Our roots are in investment banking, and our passion is for making the world a better place. That starts with creating better solutions everywhere we work, in our offices and yours. Let's elevate your values and drive change from them. Let's dive deep into your data and find what's been hiding there. Let's iterate and scale what's working, and invite disruptive ideas that can transform what isn't. Let's make you stronger where you stand, and more flexible in the world around you.",
+                        'imgPath'               : 'about-leadspace.png',
+                    })
+
+                    @@include('includes/modules/section/porthole-module.html',{
+                        'moduleType' : 'porthole-module-3',
+                        'bgType' : 'bg-cream',
+                        'padding' : 'pb-md-0 pb-6',
+                        'titleAlign' : '',
+                        'titleDisplay' : 'd-none',
+                        'title' : '',
+                    })
+                    
+                </main>
+                @@include('includes/footer.html'})
+            </div>
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

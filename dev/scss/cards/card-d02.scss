@@ -1,0 +1,40 @@
+@import '../common-imports';
+
+.card-d02{
+    border-bottom: 1px solid $primary;
+    &--img{
+        figure{
+            width: 100%;
+            height: 21.8rem;
+            @include media-breakpoint-up(md) {
+                width: 20.0rem;
+                height: 14.4rem;
+            }
+            @include media-breakpoint-up(xl) {
+                width: 21.4rem;
+                height: 16.1rem;
+            }
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+    &--text{
+        max-width: 69.4rem;
+        .h6{
+            a{
+                line-height: 1.5;
+            }
+        }
+        // .h6,p{
+        //     overflow: hidden;
+        //     text-overflow: ellipsis;
+        //     display: -webkit-box;
+        //     -webkit-line-clamp: 2; 
+        //     -webkit-box-orient: vertical;
+        //     @include media-breakpoint-up(xl) {
+        //         -webkit-line-clamp: 1; 
+        //     }
+        // }
+    }
+}

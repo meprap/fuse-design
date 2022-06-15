@@ -1,0 +1,26 @@
+<div class="xs-only-dropdown @@modifier">
+    <!-- 
+        Modifiers:
+        xs-only-dropdown--half | xs-only-dropdown--full 
+    -->
+    <div class="dropdown">
+        <a
+            class="dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            title="Lorem Topic"
+        >
+            @@mainTitle
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            @@for (var i = 0; i < topic.list.length; i++) { 
+                <li>
+                    @@include('./../repeator/topic.html', `+(JSON.stringify(topic.list[i]))+`)
+                </li>
+            }
+        </ul>
+    </div>
+</div>

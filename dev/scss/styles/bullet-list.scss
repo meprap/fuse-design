@@ -1,0 +1,39 @@
+@import "../common-imports";
+
+.bullet-list {
+    ul {
+        max-width: 72rem;
+    }
+    &__icon {
+        font-size: 3.8rem;
+        height: 3.8rem;
+        width: 3.8rem;
+    }
+    &--icon {
+        ul {
+            height: 100%;
+            max-height: 100%;
+            display: flex;
+            row-gap:1.6rem;
+            padding: 0;
+            @include media-breakpoint-up(md){
+                max-width: 90%;
+            }
+            li {
+                display: flex;
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+        &--two-col{
+            ul{
+                li{
+                    @include media-breakpoint-up(md) {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+

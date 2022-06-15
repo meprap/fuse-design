@@ -1,0 +1,65 @@
+<section class="related-articles-archive position-relative">
+    <div class="container">
+        <div class="related-articles-wrapper py-4">
+            <div class="d-flex flex-wrap justify-content-center gap-8 gap-md-4 gap-lg-8">
+                @@for (var i = 0; i < 3; i++) { 
+                    @@include('../cards/card-d01.html', {
+                        'cardVideoShowHide'         : 'd-none',
+                        'cardFigureShowHide'        : 'd-block',
+                        'cardEyebrowShowHide'       : 'd-block',
+                        'h5ShowHide'                : 'd-none',
+                        'h6ShowHide'                : 'd-none',
+                        'h7ShowHide'                : 'd-block',
+                        'b1ShowHide'                : 'd-block',
+                        'cardAlign'                 : 'left',
+                        'videoPath'                 : 'https://www.youtube.com/embed/zpOULjyy-n8?rel=0',
+                        'imgName'                   : "planned-giving@2x.jpg",
+                        'tag'                       : 'Lorem Ipsum Tag',
+                        'date'                      : 'Published Date, 2021',
+                        'cardH5'                    : 'Strategy',
+                        'cardTitle'                 : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                        'cardH7'                    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit  consectetur adipiscing elit  consectetur adipiscing elit",
+                        'cardDesc'                  : "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae…",
+                    })
+                    @@include('../cards/card-d01.html', {
+                        'cardVideoShowHide'         : 'd-none',
+                        'cardFigureShowHide'        : 'd-block',
+                        'cardEyebrowShowHide'       : 'd-block',
+                        'h5ShowHide'                : 'd-none',
+                        'h6ShowHide'                : 'd-none',
+                        'b1ShowHide'                : 'd-block',
+                        'cardAlign'                 : 'left',
+                        'videoPath'                 : 'https://www.youtube.com/embed/zpOULjyy-n8?rel=0',
+                        'imgName'                   : "blog-career-development-plan@2x.png",
+                        'tag'                       : 'Lorem Ipsum Tag',
+                        'date'                      : 'Published Date, 2021',
+                        'cardH5'                    : 'Strategy',
+                        'cardTitle'                 : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                        'cardH7'                    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                        'cardDesc'                  : "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae…",
+                    })
+                    @@include('../cards/card-d01.html', {
+                        'cardVideoShowHide'         : 'd-none',
+                        'cardFigureShowHide'        : 'd-block',
+                        'cardEyebrowShowHide'       : 'd-block',
+                        'h5ShowHide'                : 'd-none',
+                        'h6ShowHide'                : 'd-none',
+                        'b1ShowHide'                : 'd-block',
+                        'cardAlign'                 : 'left',
+                        'videoPath'                 : 'https://www.youtube.com/embed/zpOULjyy-n8?rel=0',
+                        'imgName'                   : "orrgroup-texturedpaper-white-22x.png",
+                        'tag'                       : 'Lorem Ipsum Tag',
+                        'date'                      : 'Published Date, 2021',
+                        'cardH5'                    : 'Strategy',
+                        'cardTitle'                 : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                        'cardH7'                    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                        'cardDesc'                  : "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae…",
+                    })
+                }
+            </div>
+        </div>    
+        <div class="d-flex justify-content-center pt-xl-14 pb-xl-20 pt-7 pb-10">
+            <a href="#" class="btn btn-light-blue">Load more</a>
+        </div>
+    </div>    
+</section>    

@@ -1,0 +1,14 @@
+@import '../common-imports';
+
+.campaigns{
+    .bullet-list{
+        margin-bottom: 0;
+        @include media-breakpoint-up(lg){
+            margin-bottom: 1.6rem;
+        }
+    } 
+
+    .related-article{
+        padding: 8rem 0 !important;
+    }
+}

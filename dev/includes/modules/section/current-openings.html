@@ -1,0 +1,42 @@
+<section class="current-openings @@currentOpeningsModifier py-16 pt-xl-24 pb-xl-20">
+    <div class="container">
+        @@if (context.currentOpeningsModifier === "current-openings--with-options"){
+            <div class="current-openings-options d-md-flex justify-content-end mb-6">
+                <span class="d-block font-bold text-primary mb-4 mb-md-0">Search open positions within: </span>
+                <div class="custom-radio d-flex ms-md-12 ms-xl-20">
+                    <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Orr Group
+                        </label>
+                    </div>
+                    <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Our clients
+                        </label>
+                    </div>
+                </div>
+            </div>
+        }
+
+        @@include('../section/filter.html', {
+            'filter--filterModifier'      : 'filter--alternative',
+            'filterTitle'                 : "Current Searches"
+        })
+
+        <div class="current-openings-wrap">
+            <ul class="current-openings-lists list-unstyled mb-n4">
+                @@for (var i = 0; i < openings.list.length; i++) {
+                    <li class="current-openings-list pb-10 mb-10">
+                        @@include('../cards/card-openings.html', `+(JSON.stringify(openings.list[i]))+`)
+                    </li>
+                }
+            </ul>
+
+            <div class="current-openings-footer mt-12 mt-md-10 mt-xl-14 text-center">
+                @@include('../section/pagination.html')
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'ORR Group - Video-Library'})
+</head>
+
+<body class="video-library">
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html')
+
+            <main class="theme-main">
+                @@include('includes/modules/above-the-fold/leadspace5.html',{
+                    'modifier' : 'icon',
+                    'section-spacer' : 'pt-xl-17 pt-md-14 pb-md-15 pt-10 pb-8',
+                    'figure-display' : '',
+                    'image' : 'icon-video-library.svg',
+                    'article-display1' : 'd-none d-md-block',
+                    'description-title-display' : 'd-none',
+                    'title' : '',
+                    'article-display2' : 'd-block d-md-none',
+                    'heading' : 'Video Library',
+        
+                })
+                @@include('includes/modules/section/video-library-archive-1.html')
+               
+            </main>
+            @@include('includes/footer.html'})
+        </div>
+        @@include('includes/modules/section/modal-video-form.html')
+        @@include('includes/modules/section/modal-video.html')
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

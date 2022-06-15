@@ -1,0 +1,80 @@
+// Clear Padding and Margin
+%clear-gutter {
+    margin: 0;
+    padding: 0;
+}
+
+// Removes the list style
+%list-none {
+    list-style-type: none;
+}
+
+// Transparent BG for Background Images
+%bg-transparent {
+    content: '';
+    background-color: brand(0.75);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+// Header Text
+%heading-1,
+%heading-2,
+%heading-3,
+%heading-4 {
+    color: inherit;
+    margin-top: 0;
+}
+
+%heading-1 {
+    font-weight: $font-weight-strong;
+}
+
+%heading-2 {
+    font-weight: $font-weight-bolder;
+}
+
+%heading-3 {
+    font-weight: $font-weight-bold;
+}
+
+%heading-4 {
+    font-weight: $font-weight-medium;
+}
+
+%base {
+    font-weight: $font-weight-base;
+}
+
+%texture-white,
+%texture-light,
+%texture-dark,
+%texture-cream,
+%texture-orange {
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+%texture-white {
+    background-image: url('#{$theme-imgpath}white-paper-texture-web@2x.jpg');
+}
+
+%texture-light {
+    background-image: url('#{$theme-imgpath}light-blue-paper-texture-web@2x.jpg');
+}
+
+%texture-dark {
+    background-image: url('#{$theme-imgpath}blue-paper-texture-web@2x.jpg');
+}
+
+%texture-cream {
+    background-image: url('#{$theme-imgpath}texture-cream@2x.jpg');
+}
+
+%texture-orange {
+    background-image: url('#{$theme-imgpath}orange-paper-texture-web@2x.jpg');
+}

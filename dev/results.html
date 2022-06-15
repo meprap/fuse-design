@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'ORR Group - Results'})
+    </head>
+    <body class="results">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html')
+
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/leadspace-results.html', {
+                        'mainHeading'           : "Nonprofits thrive with Orr Group.",
+                        'description'           : "We measure our success by yours. Here you can explore the evidence of our many fruitful partnerships.",
+                        'imgPath'               : 'leadspace-results@2x.png',
+                    })
+
+                    @@include('includes/modules/section/image-and-content-block.html', {
+                        'modifier'              : "result",
+                        'backgroundColor'       : "bg-cream",
+                    })
+
+                    @@include('includes/modules/section/cta-banner.html',{
+                        'modifier'          : 'cta-banner--stack',
+                        'skin'              : 'cta-banner--transparent',
+                        'alignment'         : 'cta-banner--center',
+                        'gutters'           : 'cta-banner--lg',
+                        'img'               : 'icon-folder.svg',
+                        'altImg'            : 'Visit our case studies library',
+                        'h5ShowHide'        : 'd-none',
+                        'h7ShowHide'        : 'd-none',
+                        'h5ShowHide'        : 'd-none',
+                        'h6ShowHide'        : 'd-block',
+                        'h6LinkText'        : '',
+                        'paraShowHide'      : 'd-none',
+                        'pLinkText'         : '',
+                        'listShowHide'      : 'd-none',
+                    })
+
+                    @@include('includes/modules/section/logo-scroll.html', {
+                        'headerShowHide' : "d-none"
+                    })
+                </main>
+                @@include('includes/footer.html')
+            </div>
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

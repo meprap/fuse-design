@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'ORR Group - Our Values'})
+    </head>
+    <body class="our-values">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html')
+
+                <main class="theme-main">
+
+                    <!-- leadspace--values -->
+                    @@include('includes/modules/above-the-fold/leadspace.html', {
+                        'modifier'              : "values",
+                        'h3ShowHide'            : 'd-block',
+                        'h3OptionalShowHide'    : 'd-block',
+                        'h5ShowHide'            : "d-none",
+                        'pShowHide'             : 'd-block',
+                        'mainHeading'           : "Nonprofits are guided by their values.",
+                        'mainHeadingOptional'   : "And we live by ours.",
+                        'subHeading'            : '',
+                        'description'           : "Our vision of success goes beyond the customized work with our individual partners. We're helping to build creative strategies and data-driven approaches into the foundations of philanthropy. We want to help shape its future. We value and lead with anticipation and foresight, and we seek out and nurture the growth of individuals who are poised to take the nonprofit world to new places. ",
+                        'imgPath'               : 'leadspace-values@2x.png',
+                    })
+
+                    @@include('includes/modules/section/image-and-content-block.html', {
+                        'modifier'          : "values",
+                        'backgroundColor'   : "bg-cream",
+                    })
+
+                </main>
+                @@include('includes/footer.html')
+            </div>
+            @@include('includes/scripts.html')
+            @@include('includes/modules/section/modal-team.html',{
+                'hasQuote':''
+            })
+        </div>
+
+    </body>
+</html>

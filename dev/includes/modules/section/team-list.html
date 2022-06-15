@@ -1,0 +1,22 @@
+<section class="team-list py-16 pt-xl-22 pb-xl-24">
+    <div class="container">
+        @@include('../section/filter.html', {
+            'filter--filterModifier'    : '',
+            'filterTitle'               : "Our Team"
+        })
+
+        <div class="team-list-wrap">
+            <div class="team-list-members d-md-flex flex-md-wrap mb-n8 mb-md-n4 mb-xl-n12 px-9 px-md-0 mx-md-n2 mx-xl-n6">
+                @@for (var i = 0; i < team.list.length; i++) {
+                    <div class="team-list-item mb-8 mb-md-4 mb-xl-12 px-md-2 px-xl-6">
+                        @@include('../cards/card-team.html', `+(JSON.stringify(team.list[i]))+`)
+                    </div>
+                }
+            </div>
+
+            <div class="team-list-footer mt-16 mt-md-10 mt-xl-14 text-center">
+                <button type="button" href="#" class="btn btn-lg btn-light-blue">Load more</button>
+            </div>
+        </div>
+    </div>
+</section>

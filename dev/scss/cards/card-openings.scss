@@ -1,0 +1,35 @@
+@import '../common-imports';
+
+.card-openings {
+    .btn {
+        @include media-breakpoint-up(md) {
+            min-width: 17.5rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-width: 20.2rem;
+        }
+    }
+
+    .card {
+        &-link {
+            @include media-breakpoint-up(md) {
+                margin-left: 3.2rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                margin-left: 20rem;
+            }
+        }
+
+        &-body {
+            width: 100%;
+            font-size: 1.4rem;
+            line-height: 1.43;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

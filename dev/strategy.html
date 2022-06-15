@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'ORR Group - Strategy'})
+    </head>
+    <body class="strategy">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html')
+
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/leadspace.html', {
+                        'modifier'              : "strategy",
+                        'h3ShowHide'            : 'd-block',
+                        'h3OptionalShowHide'    : 'd-none',
+                        'h5ShowHide'            : "d-block",
+                        'pShowHide'             : 'd-block',
+                        'mainHeading'           : "Strategy",
+                        'mainHeadingOptional'   : "",
+                        'subHeading'            : "Expert guidance, <br> hands-on support.",
+                        'description'           : "Too often, consulting partners leave you with a strategy you can't afford. The realities of implementation often limit nonprofits' ability to put good plans into action. Our approach ensures a realistic path to achieving your mission, vision, and goals. ",
+                        'imgPath'               : 'hiker-orr-group-strategy-transparent-background-pl-01@2x.png',
+                    })
+
+                    @@include('includes/modules/section/bullet-list-module.html',{
+                        'bg':'bg-cream',
+                        'titleShowHide':'d-block',
+                        'title':'We ask questions like:',
+                        'subTitleShowHide':'d-none',
+                        'paragraphShowHide':'d-block',
+                        'paragraph':'Then we help you build a strategy that is actionable, achievable, and grounded in reality. ',
+                        "results"  : {
+                            "list": [
+                                {
+                                    'iconShowHide' : 'd-none',
+                                    'listText' : 'Does your plan have competitive advantages? Will it stand out? What makes it unique?'
+                                },
+                                {
+                                    'iconShowHide' : 'd-none',
+                                    'listText' : 'Do your stakeholders share your aspirations?'
+                                },
+                                {
+                                    'iconShowHide' : 'd-none',
+                                    'listText' : 'Are your internal resources aligned with your strategic goals? What do you need to change or add in order to get where you want to go?'
+                                },
+                            ]
+                        },
+                    })
+
+                    @@include('includes/modules/section/tabbed-text-module-2.html',{
+                        'bg':'bg-cream',
+                        'titleShowhide':'d-none',
+                        'fontWeight':'fw-normal'
+                    })
+                    
+                    @@include('includes/modules/section/cta-banner.html',{
+                        'modifier'          : 'cta-banner--inline',
+                        'skin'              : 'cta-banner--light-blue',
+                        'alignment'         : 'cta-banner--left',
+                        'gutters'           : 'cta-banner--md',
+                        'img'               : 'icon-mail@2x.png',
+                        'altImg'            : 'How can Orr Group help you build strategy?',
+                        'h5ShowHide'        : 'd-none',
+                        'h7ShowHide'        : 'd-block',
+                        'h6ShowHide'        : 'd-none',
+                        'h6LinkText'        : '',
+                        'paraShowHide'      : 'd-none',
+                        'pLinkText'         : '',
+                        'listShowHide'      : 'd-none',
+                    })
+
+                    @@include('includes/modules/section/quote.html', {
+                        'number' : 'one',
+                        'quoteSkin' : '',
+                    })
+                    @@include('includes/modules/section/related-article.html',{
+                        'bgColor':'bg-light-blue',
+                        'title':'Lorem articles about Strategy'
+                    })
+                </main>
+                @@include('includes/footer.html'})
+            </div>
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

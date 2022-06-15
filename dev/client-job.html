@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'ORR Group - Client Job Board'})
+    </head>
+    <body class="client-job">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html')
+                
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/leadspace-results.html', {
+                        'mainHeading'           : "Lorem ipsum client jobs headline",
+                        'description'           : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus, velit sed ornare cursus, quam nisi accumsan sem, eget dictum arcu nisi non est. ",
+                        'imgPath'               : 'leadspace-client-job-2@2x.png',
+                    })
+
+                    @@include('includes/modules/section/current-openings.html', {
+                        'currentOpeningsModifier'   : '',
+                        "openings" : {
+                            "list": [
+                                {
+                                    'title'         : 'Associate',
+                                    'location'      : 'New York, New York',
+                                    'description'   : 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                    'linkUrl'       : '#',
+                                    'btnContent'    : 'Apply Now',
+                                },
+                                {
+                                    'title'         : 'Associate',
+                                    'location'      : 'New York, New York',
+                                    'description'   : 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                    'linkUrl'       : '#',
+                                    'btnContent'    : 'Apply Now',
+                                },
+                                {
+                                    'title'         : 'Associate',
+                                    'location'      : 'New York, New York',
+                                    'description'   : 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                    'linkUrl'       : '#',
+                                    'btnContent'    : 'Apply Now',
+                                },
+                                {
+                                    'title'         : 'Associate',
+                                    'location'      : 'New York, New York',
+                                    'description'   : 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                    'linkUrl'       : '#',
+                                    'btnContent'    : 'Apply Now',
+                                },
+                                {
+                                    'title'         : 'Associate',
+                                    'location'      : 'New York, New York',
+                                    'description'   : 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                    'linkUrl'       : '#',
+                                    'btnContent'    : 'Apply Now',
+                                },
+                            ]
+                        },
+                    })
+
+                    @@include('includes/modules/section/cta-banner.html',{
+                        'modifier'          : 'cta-banner--stack',
+                        'skin'              : 'cta-banner--light-textured',
+                        'alignment'         : 'cta-banner--center',
+                        'gutters'           : 'cta-banner--lg',
+                        'img'               : 'icon-suitcase.svg',
+                        'altImg'            : 'Learn more about Orr Group',
+                        'h5ShowHide'        : 'd-none',
+                        'h7ShowHide'        : 'd-none',
+                        'h6ShowHide'        : 'd-block',
+                        'h6LinkText'        : '',
+                        'paraShowHide'      : 'd-none',
+                        'pLinkText'         : '',
+                        'listShowHide'      : 'd-flex',
+                    })
+
+                </main>
+                @@include('includes/footer.html')
+            </div>
+            @@include('includes/scripts.html')
+            @@include('includes/modules/section/modal-team.html',{
+                'hasQuote':''
+            })
+        </div>
+
+    </body>
+</html>

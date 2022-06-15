@@ -1,0 +1,28 @@
+@import '../common-imports';
+
+.article-topic-page{
+    .theme-main{
+        @include media-breakpoint-up(md){
+            margin-top: 11rem;
+        }
+        @include media-breakpoint-up(xl){    
+            margin-top:13.4rem;
+        }
+
+        .related-articles-archive{
+            .related-articles-wrapper {
+                .card-d01--left{
+                    height: auto!important;
+                }
+            }
+        }
+    }
+    .leadspace5{
+        &--icon{
+            padding-top: 14.6rem!important;
+
+        }
+    }
+    
+}
+

@@ -1,0 +1,127 @@
+@import '../common-imports';
+
+.card {
+    &-d01 {
+        background-image: url('#{$theme-imgpath}white-paper-texture-web@2x.jpg');
+        background-position: center center;
+        box-shadow: 0.2rem 0.2rem 2rem 0 rgba(63, 63, 63, 0.24);
+        border-radius: 2.3rem;
+
+        @include media-breakpoint-up(xl) {
+            box-shadow: 0.2rem 0.2rem 1.6rem rgba(14, 36, 73, 0.2);
+        }
+
+        &-btn {
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+            text-indent: -999rem;
+        }
+
+        .card {
+            &-figure {
+                height: 22.2rem;
+
+                @include media-breakpoint-up(md) {
+                    height: 19.2rem;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    height: 30rem;
+                }
+
+                img {
+                    border-radius: 2.3rem 2.3rem 0 0;
+                }
+            }
+
+            &-video {
+                border-radius: 2.3rem 2.3rem 0 0;
+                overflow: hidden;
+
+                .btn-control {
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    font-size: 8.2rem;
+                    color: $white;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .card-figure{
+                    border-radius: 2.3rem 2.3rem 0 0;
+                }
+                iframe{
+                    border-radius: 2.4rem 2.4rem 0 0;
+                }
+            }
+
+            &-eyebrow {
+                > * {
+                    display: none;
+
+                    &:not(:first-child) {
+                        margin-left: 1.2rem;
+
+                        &::before {
+                            content: '';
+                            background-color: $primary;
+                            border-radius: 50%;
+                            width: 0.3rem;
+                            height: 0.3rem;
+                            position: absolute;
+                            top: 7px;
+                            left: -9px;
+                        }
+                    }
+                }
+            }
+
+            &-body {
+                flex: auto;
+
+                > div {
+                    > * {
+                        &:first-child {
+                            margin-top: 0 !important;
+                        }
+                    }
+                }
+
+                h5,
+                h6,
+                .h5,
+                .h6,
+                .h7 {
+                    transition: all 0.3s ease;
+                    hyphens: auto;
+                }
+
+                .h6{
+                    @include media-breakpoint-up(md){
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+
+        &--left {
+            text-align: left;
+        }
+
+        &--center {
+            text-align: center;
+        }
+
+        &:hover {
+            h5,
+            h6,
+            .h5,
+            .h6,
+            .h7 {
+                color: $hover-blue !important;
+            }
+        }
+    }
+} 

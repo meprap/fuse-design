@@ -1,0 +1,12 @@
+@import '../common-imports';
+@import '../cards/card-d02.scss';
+
+.search-results{
+    background-color: $cream;
+    .leadspace5{
+        margin-top: 15rem;
+        @include media-breakpoint-up(xl) {
+            margin-top: 20rem;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'ORR Group - Article Topic Page'})
+</head>
+
+<body class="article-topic-page">
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html')
+
+            <main class="theme-main">
+                @@include('includes/modules/above-the-fold/leadspace5.html',{
+                    'modifier' : 'icon',
+                    'section-spacer' : 'py-10 pt-md-14 pb-md-15 py-xl-6',
+                    'figure-display' : 'd-none',
+                    'image' : '',
+                    'article-display1' : '',
+                    'description-title-display' : 'd-none',
+                    'title' : '',
+                    'article-display2' : 'd-none',
+                    'heading' : 'Topic: Lorem Ipsum',
+        
+                })
+                @@include('includes/modules/section/related-articles-archive.html') 
+               
+            </main>
+            @@include('includes/footer.html')
+        </div>
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

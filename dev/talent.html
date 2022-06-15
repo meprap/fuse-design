@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'ORR Group - Strategy'})
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html')
+
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/leadspace.html', {
+                        'modifier'              : "talent",
+                        'h3ShowHide'            : 'd-block',
+                        'h3OptionalShowHide'    : 'd-none',
+                        'h5ShowHide'            : "d-none",
+                        'pShowHide'             : 'd-block',
+                        'mainHeading'           : "Talent",
+                        'mainHeadingOptional'   : "",
+                        'subHeading'            : '',
+                        'description'           : "Attracting and keeping great people has never been more challenging than it is right now. Orr Group has the experience and the resources to keep you staffed, from recruiting and onboarding to nurturing, developing, and retaining talent; embedding our experienced human resources professionals within organizations as interim support; and closely auditing your practices so we can help you drive and maintain a strong work culture.",
+                        'imgPath'               : 'leadspace-talent@2x.png',
+                    })
+
+                    @@include('includes/modules/section/tabbed-text-module.html',{
+                        'bg':'bg-cream',
+                        'iconShowHide':'d-none',
+                        'linkShowhide':'d-none',
+                        'fontWeight':'fw-bold'
+                    })
+
+                    @@include('includes/modules/section/cta-banner.html',{
+                        'modifier'          : 'cta-banner--inline',
+                        'skin'              : 'cta-banner--light-blue',
+                        'alignment'         : 'cta-banner--left',
+                        'gutters'           : 'cta-banner--md',
+                        'img'               : 'icon-mail@2x.png',
+                        'altImg'            : 'How can Orr Group help you build strategy?',
+                        'h5ShowHide'        : 'd-none',
+                        'h7ShowHide'        : 'd-block',
+                        'h6ShowHide'        : 'd-none',
+                        'h6LinkText'        : '',
+                        'paraShowHide'      : 'd-none',
+                        'pLinkText'         : '',
+                        'listShowHide'      : 'd-none',
+                    })
+
+                    @@include('includes/modules/section/quote.html', {
+                        'number' : 'one',
+                        'quoteSkin' : ''
+                    })
+
+                    @@include('includes/modules/section/related-article.html',{
+                        'bgColor':'bg-light-blue',
+                        'title':'Lorem articles about Talent'
+                    })
+                </main>
+                @@include('includes/footer.html'})
+            </div>
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

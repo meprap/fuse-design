@@ -1,0 +1,45 @@
+@import '../common-imports';
+
+.video-module{
+    &__title{
+            color: $primary;
+        @include media-breakpoint-up(md){
+            background-image: url(#{$theme-imgpath}rectangle-cropped.svg);
+            color:$white;
+            width: max-content;
+            background-size: cover; 
+            background-position: top right; 
+            background-repeat: no-repeat;
+            margin-bottom: -1.2rem!important;
+            margin-left: 0.1rem;
+            border-top-left-radius: 2.4rem;
+        }   
+        @include media-breakpoint-up(xl){    
+            margin-bottom: -2rem!important;
+        }
+    } 
+    &__video{
+        border-radius: 1.5rem;
+        box-shadow: $shadow6;
+        @include media-breakpoint-up(md){
+            box-shadow: $shadow5;
+        }
+        &-poster{
+            &-play{
+                cursor: pointer;
+                height: 6.2rem;
+                aspect-ratio: 1/1;
+                @include media-breakpoint-up(md){
+                    height: 4rem;
+                }
+                @include media-breakpoint-up(xl){
+                    height: 8.5rem;
+                }
+            }
+        }
+        iframe{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

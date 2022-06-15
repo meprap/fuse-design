@@ -1,0 +1,80 @@
+.form {
+    &-control {
+        border: none;
+        border-radius: 2.95rem;
+        box-shadow: inset 0.2rem 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.24);
+        padding: 1.8rem 2rem 1.7rem;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: $orr-blue;
+
+        &:focus {
+            color: $orr-blue;
+        }
+
+        @include placeholder {
+            color: $placeholder-input;
+        }
+
+        &:hover {
+            @include placeholder {
+                color: $hover-blue;
+            }
+        }
+    }
+}
+
+.custom {
+    &-radio {
+        > div {
+            font-weight: $font-weight-medium;
+            color: $primary;
+
+            &:not(:first-child) {
+                margin-left: 4.8rem;
+            }
+        }
+    }
+}
+
+.form-check {
+    margin-bottom: 0;
+
+    .form-check-label {
+        margin-left: 0.8rem;
+    }
+}
+
+.form-check-input {
+    border: 0.3rem solid $primary;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0;
+
+    &:checked[type='radio'] {
+        background-image: url('#{$theme-imgpath}custom-checked.svg');
+    }
+}
+
+.invalid {
+    .wpcf7-response-output {
+        border: none !important;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding: 1rem !important;
+        margin: 2rem 0 0 !important;
+    }
+
+    // .form-control,
+    .hasError {
+        outline: 0.2rem solid $danger;
+        font-weight: $font-weight-semi-bold;
+        border-radius: 2.95rem;
+    }
+}
+
+.required-note {
+    font-size: 1.4rem;
+    font-weight: $font-weight-semi-bold;
+    line-height: 1.43;
+}

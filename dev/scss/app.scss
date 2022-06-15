@@ -1,0 +1,97 @@
+// 1. Global
+@import 'global/path';
+@import 'global/fonts';
+@import 'global/functions';
+
+
+// 2. Configuration
+@import '../../node_modules/bootstrap/scss/functions';
+@import './variables';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/utilities';
+
+
+// 3. Layout & components
+@import '../../node_modules/bootstrap/scss/root';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/type';
+@import '../../node_modules/bootstrap/scss/images';
+@import '../../node_modules/bootstrap/scss/containers';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/navbar';
+@import '../../node_modules/bootstrap/scss/nav';
+@import '../../node_modules/bootstrap/scss/accordion';
+@import '../../node_modules/bootstrap/scss/transitions';
+@import '../../node_modules/bootstrap/scss/forms';
+@import '../../node_modules/bootstrap/scss/dropdown';
+@import '../../node_modules/bootstrap/scss/buttons';
+// @import '../../node_modules/bootstrap/scss/button-group';
+@import '../../node_modules/bootstrap/scss/modal';
+// @import '../../node_modules/bootstrap/scss/offcanvas';
+
+
+// 4. Helpers
+@import '../../node_modules/bootstrap/scss/helpers';
+
+
+// 5. Api
+@import '../../node_modules/bootstrap/scss/utilities/api';
+@import '../../node_modules/swiper/swiper';
+
+
+// 6.Utilities
+@import 'vendors/icons/icons.scss';
+
+
+// 7. Mixins
+@import 'mixins/mixins';
+
+
+// 8. Base
+@import 'base/global-vars';
+@import 'base/grids';
+
+
+// 8. Utilities
+@import "utilities/helper";
+@import "utilities/placeholders";
+@import "utilities/typo";
+@import "utilities/config";
+
+
+// 9. Modules
+@import 'modules/buttons';
+@import 'modules/custom-select';
+@import 'modules/forms';
+@import 'modules/hamburger';
+@import 'modules/modal';
+@import 'modules/filter';
+@import 'modules/pagination';
+@import 'modules/xs-only-dropdown';
+// @import 'modules/accordion';
+
+
+// 10. Sliders
+@import 'sliders/swiper';
+
+
+// 11. Global Components to use
+@import "layout/header";
+@import "layout/offcanvas";
+@import "layout/footer";
+@import "layout/main";
+@import "layout/post";
+
+
+// 12. Cards
+@import 'cards/card-a01';
+@import 'cards/card-d01';
+@import 'cards/card-a02';
+@import 'cards/card-quote';
+@import 'cards/card-video';
+@import 'cards/card-gated-content-form';
+@import 'cards/card-team';
+@import 'cards/card-client';
+@import 'cards/card-openings';
+@import 'cards/card-d02';

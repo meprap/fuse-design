@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'ORR Group - Video Page'})
+    </head>
+    <body class="article">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html')
+                
+                <main class="theme-main">
+                    @@include('includes/modules/section/article-content.html', {
+                        'modifier'          : "video",
+                        'posterImage'       : "video-module.png"
+                    }))
+
+                    @@include('includes/modules/section/related-article.html',{
+                        'bgColor'   : '',
+                        'title'     : 'Related Articles'
+                    })
+
+                </main>
+                @@include('includes/footer.html')
+            </div>
+            @@include('includes/scripts.html')
+            @@include('includes/modules/section/modal-team.html',{
+                'hasQuote':''
+            })
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,13 @@
+@import '../common-imports';
+
+.about{
+    .leadspace{
+        &--about{
+            .container{
+                > div {
+                    padding-bottom: 7.2rem;
+                }    
+            }
+        }
+    }
+}

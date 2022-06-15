@@ -1,0 +1,251 @@
+@import "../common-imports";
+
+.image-and-content {
+    $self: &;
+    &--result,
+    &--service,
+    &--values {
+        #{ $self }-wrapper {
+            @include even {
+                #{ $self }-figure {
+                    @include media-breakpoint-up(md) {
+                        order: 2;
+                    }
+                }
+                #{ $self }-description {
+                    @include media-breakpoint-up(md) {
+                        order: 1;
+                    }
+                }
+            }
+        }
+
+        p {
+            margin-top: 1.6rem;
+            @include media-breakpoint-up(md) {
+                margin-top: 2rem;
+            }
+            @include media-breakpoint-up(xl) {
+                margin-top: 3.2rem;
+            }
+        }
+
+        a {
+            font-weight: bold;
+            @include media-breakpoint-up(md) {
+                font-weight: $font-weight-medium;
+            } 
+            &:hover {
+                color: $hover-blue !important;
+            }
+            // &:active,
+            // &:visited {
+            //     color: $orr-blue !important;
+            // }
+            margin-top: 1.6rem;
+            @include media-breakpoint-up(md) {
+                margin-top: 0.8rem;
+                font-weight: 500;
+            }
+            @include media-breakpoint-up(xl) {
+                margin-top: 1.6rem;
+            }
+        }
+    }
+
+    &--result {
+        .image-and-content {
+            &-description {
+                // background-image: url('#{$theme-imgpath}texture-blue-01@2x.png');
+                // background-repeat: repeat;
+                background-color: $orr-blue;
+                padding: 1.6rem 1.9rem 3.2rem;
+                color: $white !important;
+
+                @include media-breakpoint-up(md) {
+                    padding: 4rem 3.6rem 3.8rem 4rem;
+                    flex: auto;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    padding: 10.4rem 5.6rem 8rem;
+                    max-width: 66.4rem;
+                }
+
+                .h4,
+                h4 {
+                    color: $light-blue !important;
+                }
+
+                p {
+                    color: $white !important;
+                }
+            }
+
+            &-figure {
+                @include media-breakpoint-up(md) {
+                    min-width: 28.4rem;
+                    max-width: 28.4rem;
+                    min-height: 28.4rem;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    min-height: 40rem;
+                    min-width: 40rem;
+                    max-width: 40rem;
+                }
+
+                img {
+                    @include media-breakpoint-up(md) {
+                        height: 100%;
+                    }
+                }
+            }
+            &-wrapper {
+                @include even {
+                    #{ $self }-description {
+                        background-color: $light-blue;
+                        // background-image: url('#{$theme-imgpath}texture-modal-03@2x.jpg');
+                        // background-repeat: repeat;
+                        color: $dark-blue !important;
+
+                        .h4,
+                        h4 {
+                            color: $orr-blue !important;
+                        }
+
+                        p {
+                            color: $dark-blue !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--service {
+        background-image: url("#{$theme-imgpath}light-blue-paper-texture-web@2x.jpg");
+        #{ $self }-card {
+            padding: 3.2rem 0 4rem;
+            @include media-breakpoint-up(md) {
+                padding: 3.2rem 0;
+            }
+            @include media-breakpoint-up(xl) {
+                padding: 3.6rem 0;
+            }
+        }
+        #{ $self }-description {
+            padding-top: 3.2rem;
+            @include media-breakpoint-up(md) {
+                padding-top: 0;
+                padding-left: 4rem;
+            }
+            @include media-breakpoint-up(xl) {
+                padding-left: 5.6rem;
+                max-width: 56rem;
+            }
+        }
+        #{ $self }-figure {
+            @include media-breakpoint-up(md) {
+                min-width: 32rem;
+                max-width: 32rem;
+                height: 24rem;
+            }
+            @include media-breakpoint-up(xl) {
+                min-width: 50.4rem;
+                max-width: 50.4rem;
+                height: 37.8rem;
+            }
+        }
+        #{ $self }-wrapper {
+            @include even {
+                #{ $self }-description {
+                    @include media-breakpoint-up(md) {
+                        padding-right: 4rem;
+                        padding-left: 0;
+                    }
+                    @include media-breakpoint-up(xl) {
+                        padding-right: 5.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &--values {
+        p {
+            margin-top: 2rem;
+
+            @include media-breakpoint-up(xl) {
+                margin-top: 3.2rem;
+            }
+        }
+
+        #{ $self }-description {
+            h4,
+            .h4 {
+                color: $primary !important;
+            }
+
+            @include media-breakpoint-down(md) {
+                margin-top: 2.8rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                padding-left: 4rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-left: 6.4rem;
+                max-width: 61.5rem;
+            }
+        }
+
+        #{ $self }-figure {
+            @include media-breakpoint-down(md) {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                min-width: 22.3rem;
+                max-width: 22.3rem;
+                height: 22.3rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                min-width: 32.7rem;
+                max-width: 32.7rem;
+                height: 32.7rem;
+            }
+        }
+
+        #{ $self }-wrapper {
+            &:not(:first-child) {
+                margin-top: 5.2rem;
+
+                @include media-breakpoint-up(xl) {
+                    margin-top: 7.2rem;
+                }
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-left: 6rem;
+                padding-right: 6rem;
+            }
+
+            @include even {
+                #{ $self }-description {
+                    @include media-breakpoint-up(md) {
+                        padding-right: 4rem;
+                        padding-left: 0;
+                    }
+
+                    @include media-breakpoint-up(xl) {
+                        padding-right: 6.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

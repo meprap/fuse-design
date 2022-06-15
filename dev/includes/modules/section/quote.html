@@ -1,0 +1,11 @@
+<section class="quote @@quoteSkin position-relative overflow-hidden pt-6 pb-8 pt-md-8 pb-md-6 py-xl-12">
+    <!-- with skin class - quote--alternate -->
+    <div class="container">
+        @@if(context.number === 'more') {
+            @@include('../sliders/quote-carousel.html')
+        }
+        @@if(context.number === 'one') {
+            @@include('../sliders/quote-carousel-variation.html')
+        }
+    </div>
+</section>

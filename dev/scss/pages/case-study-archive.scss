@@ -1,0 +1,22 @@
+@import '../common-imports';
+
+.case-study-archive {
+    .featured-block {
+        padding-top: 13rem;
+        padding-bottom: 1rem;
+
+        @include media-breakpoint-up(md) {
+            padding-top: 16rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-top: 17.8rem;
+        }
+    }
+
+    .case-list {
+        @include media-breakpoint-up(md) {
+            padding-top: 7rem !important;
+        }
+    }
+}

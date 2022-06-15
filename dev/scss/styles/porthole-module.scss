@@ -1,0 +1,122 @@
+@import '../common-imports';
+
+.porthole-module {
+    &--alternate {
+        background-image: url('#{$theme-imgpath}light-blue-paper-texture-web@2x.jpg');
+
+        h3 {
+            @include media-breakpoint-down(md) {
+                text-align: center;
+            }
+
+            @include media-breakpoint-up(md) {
+                margin-bottom: 6rem !important;
+            }
+
+            @include media-breakpoint-up(md) {
+                margin-bottom: 5.6rem !important;
+            }
+        }
+    }
+
+    .swiper {
+        &-wrapper {
+            @include media-breakpoint-up(md) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        &-pagination {
+            @include media-breakpoint-up(md) {
+                display: none !important;
+            }
+        }
+    }
+
+    .card-porthole {
+        &__img {
+            height: 18rem;
+            width: 18rem;
+        }
+    }
+
+    &-1,
+    &-2 {
+        .swiper {
+            &-slide {
+                @include media-breakpoint-up(md) {
+                    width: 30%;
+                }
+            }
+            .card-porthole {
+                @include media-breakpoint-up(md) {
+                    max-width: 22.4rem;
+                }
+                &__img {
+                    @include media-breakpoint-up(md) {
+                        height: 16.8rem;
+                        width: 16.8rem;
+                    }
+                    @include media-breakpoint-up(xl) {
+                        height: 21.8rem;
+                        width: 21.8rem;
+                    }
+                }
+                &__content-title {
+                    
+                    @include media-breakpoint-up(md){
+                        line-height: 1.5;
+                    }
+                    
+                    &:hover {
+                        color: $hover-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    &-1 {
+        .swiper {
+            .card-porthole {
+                @include media-breakpoint-up(lg) {
+                    max-width: 31.2rem;
+                }
+            }
+        }
+    }
+
+    &-2 {
+        .swiper {
+            .card-porthole {
+                @include media-breakpoint-up(lg) {
+                    max-width: 32rem;
+                }
+            }
+        }
+    }
+
+    &-3 {
+        .swiper {
+            padding: 0 1.3rem;
+
+            &-slide {
+                @include media-breakpoint-up(md) {
+                    width: 25%;
+                }
+            }
+            .card-porthole {
+                &__img {
+                    @include media-breakpoint-up(md) {
+                        height: 12rem;
+                        width: 12rem;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        height: 15.9rem;
+                        width: 15.9rem;
+                    }
+                }
+            }
+        }
+    }
+}

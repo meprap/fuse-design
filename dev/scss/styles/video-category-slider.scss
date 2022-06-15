@@ -1,0 +1,14 @@
+@import '../common-imports';
+@import '../sliders/swiper-a04';
+
+.video-category-slider {
+    background-image: url('#{$theme-imgpath}light-blue-paper-texture-web@2x.jpg');
+
+    .card-video{
+        width: 100%;
+        iframe{
+            border:0;
+        }
+    }
+}
+ 

@@ -1,0 +1,22 @@
+@import '../common-imports';
+
+.team-list {
+    &-members {
+        > div {
+            @include media-breakpoint-up(md) {
+                flex: 0 0 auto;
+                width: 33.33333%;
+                max-width: 100%;
+            }
+        }
+    }
+    .btn-light-blue{
+        &:focus{
+            color: $orr-blue;
+            box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.24);
+        }
+        &:focus-within{
+            background-color: $light-blue;
+        }
+    }
+}

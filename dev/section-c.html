@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      @@include('includes/head.html',{'pageTitle':'Sections'})
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">featured-video-a--form</div>
+            </div>
+        </div>
+        @@include('includes/modules/section/featured-video-a-form.html',{
+            'title' : 'Our Insights',
+            'subtitle' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam bibendum tristique.',
+        })
+        <div class="container">
+            <div class="row">
+                <div class="col">featured-video-a</div>
+            </div>
+        </div>
+        @@include('includes/modules/section/featured-video-a.html',{
+            'title' : 'Our Insights',
+            'subtitle' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam bibendum tristique.',
+        })
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">video-module</div>
+            </div>
+        </div>
+        @@include('includes/modules/section/video-module.html',{
+            'text' : "Learn more about Orr Group's fundraising approach.",
+            'posterImage': 'video-module.png',
+        })
+
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">porthole-module-1</div>
+            </div>
+        </div>
+        @@include('includes/modules/section/porthole-module.html',{
+            'moduleType' : 'porthole-module-1',
+            'bgType' : 'bg-cream',
+            'padding' : 'pt-xl-12 pt-md-12 pb-md-4 pt-10 pb-6',
+            'titleAlign' : 'text-center',
+            'titleDisplay' : 'd-block',
+            'title' : 'Our Services',
+            'titleMargin' : 'mb-xl-20 mb-md-6 mb-8',
+        })
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">porthole-module-2</div>
+            </div>
+        </div>
+        @@include('includes/modules/section/porthole-module.html',{
+            'moduleType' : 'porthole-module-2',
+            'bgType' : 'porthole-module--alternate',
+            'padding' : 'pt-md-3 pt-10 pb-md-0 pb-6',
+            'titleDisplay' : '',
+            'titleAlign' : '',
+            'title' : 'Our culture',
+            'titleMargin' : 'mb-xl-20 mb-md-6 mb-8',
+        })
+        <div class="container">
+            <div class="row">
+                <div class="col">porthole-module-3</div>
+            </div>
+        </div>
+        @@include('includes/modules/section/porthole-module.html',{
+            'moduleType' : 'porthole-module-3',
+            'bgType' : 'bg-cream',
+            'padding' : 'pb-md-0 pb-6',
+            'titleAlign' : '',
+            'titleDisplay' : 'd-none',
+            'title' : '',
+            'titleMargin' : '', 
+        })
+
+        <div class="container">
+            <div class="row">
+                <div class="col">leadspace-5</div>
+            </div>
+        </div>
+        @@include('includes/modules/above-the-fold/leadspace5.html',{
+            'section-spacer' : 'pt-xl-17 pt-md-14 pb-md-15 pt-10 pb-8',
+            'figure-display' : '',
+            'image' : 'hiker-orr-group-strategy-transparent-background-pl-01@2x.png',
+            'article-display1' : 'd-sm-block d-none',
+            'description-title-display' : '',
+            'title' : 'Search results for:',
+            'article-display2' : 'd-sm-none',
+            'heading' : 'Lorem Ipsum',
+
+        })
+
+        <div class="container">
+            <div class="row">
+                <div class="col">search-banner</div>
+            </div>
+        </div>
+        @@include('includes/modules/section/search-banner.html')
+
+        @@include('includes/modules/cards/card-d02.html')
+
+
+
+        @@include('includes/scripts.html')
+        <br>
+
+
+
+        @@include('includes/scripts.html')
+    </body>
+</html>

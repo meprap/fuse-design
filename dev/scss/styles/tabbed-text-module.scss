@@ -1,0 +1,100 @@
+@import "../common-imports";
+
+.tabbed-text {
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+    .nav-pills {
+        padding-right: 0;
+        margin-bottom: 2rem;
+        @include media-breakpoint-up(md) {
+            padding-right: 4rem;
+        }
+        @include media-breakpoint-up(lg) {
+            padding-right: 6.2rem;
+        }
+        .nav-link {
+            max-width: 31.1rem;
+            width: 100%;
+            background: $light-blue;
+            border-radius: 3.6rem;
+            margin: 0 auto 0.8rem;
+            font-size: 1.4rem;
+            line-height: 1.82rem;
+            padding: 1.8rem 1.2rem;
+            &:hover {
+                background: $primary;
+            }
+            @include media-breakpoint-up(md) {
+                max-width: 23.2rem;
+                width: 23.2rem;
+                margin-bottom: 1.6rem;
+            }
+            @include media-breakpoint-up(lg) {
+                max-width: 26.4rem;
+                width: 26.4rem;
+                font-size: 1.6rem;
+                padding: 2.6rem 1.2rem;
+                line-height: 2.08rem;
+            }
+            &.active {
+                background: $orr-blue;
+            }
+        }
+    }
+
+    &__content {
+        max-width: 64.6rem;
+        h6 {
+            font-size: 1.65rem;
+            @include media-breakpoint-up(lg) {
+                font-size: 2.13rem;
+            }
+        }
+
+        &__icon {
+            font-size: 4.2rem;
+            width: 4.2rem;
+            height: 4.2rem;
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+            .icon-hr {
+                font-size: 4.8rem;
+            }
+        }
+    }
+    &__list {
+        margin-top: 1.6rem;
+        @include media-breakpoint-up(md) {
+            margin-top: 2.4rem;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-top: 3.2rem;
+        }
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                &:last-child {
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+        &--two-col {
+            ul {
+                li {
+                    width: 100%;
+                    @include media-breakpoint-up(lg){
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

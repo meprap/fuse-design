@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'ORR Group - Planned Giving'})
+</head>
+
+<body class="planned-giving">
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html')
+
+            <main class="theme-main">
+                @@include('includes/modules/above-the-fold/leadspace.html', {
+                    'modifier'              : "planned-giving",
+                    'h3ShowHide'            : 'd-block',
+                    'h3OptionalShowHide'    : 'd-none',
+                    'h5ShowHide'            : "d-block",
+                    'pShowHide'             : 'd-block',
+                    'mainHeading'           : "Planned Giving",
+                    'mainHeadingOptional'   : "",
+                    'subHeading'            : "Are you prepared <br>for the future?",
+                    'description'           : "Imagine if your organization had focused on planned giving 30 years ago. How much stronger would you be today? <p>It's not too late to develop a planned giving strategy. In fact, right now is the perfect time to start. A historic transfer of wealth is already underway, and data show that 70% of planned gifts are made simply because the donor was asked. Orr Group can help you lift up your voice.",
+                    'imgPath'               : 'orr-planned-giving@2x.png',
+                })
+
+                @@include('includes/modules/section/infographic.html',{
+                    'imgPath':'figure-planned-giving-001@2x.png',
+                    'imgPathMobile':'infographic-xs@2x.png',
+                    'captionShowHide':'d-block'
+                })
+
+                @@include('includes/modules/section/text-block.html', {
+                    'skin'          : '',
+                    'h5Heading'     :  '',
+                    'showHideH5'    :  "d-none",
+                    'showHideH6'    :  "",
+                    'h6Heading'     :  "What is your organization doing to ensure you're included in the great wealth transfer?",
+                    'paragraph'     :  "Orr Group has the expertise to support you in all areas of planned giving: strategy, management, and administration. And we're experienced in a range of creative planned giving approaches to help you get the most out of the present opportunity in philanthropy.",
+                })
+
+                @@include('includes/modules/section/cta-banner.html',{
+                    'modifier'          : 'cta-banner--inline',
+                    'skin'              : 'cta-banner--light-blue',
+                    'alignment'         : 'cta-banner--left',
+                    'gutters'           : 'cta-banner--md',
+                    'img'               : 'icon-folder.svg',
+                    'altImg'            : 'CTA to applicable case study',
+                    'h5ShowHide'        : 'd-none',
+                    'h7ShowHide'        : 'd-none',
+                    'h6ShowHide'        : 'd-block',
+                    'h6LinkText'        : '',
+                    'paraShowHide'      : 'd-none',
+                    'pLinkText'         : '',
+                    'listShowHide'      : 'd-none',
+                })
+
+                @@include('includes/modules/section/quote.html', {
+                    'number' : 'one',
+                    'quoteSkin' : ''
+                })
+
+                @@include('includes/modules/section/related-article.html',{
+                    'bgColor':'bg-light-blue',
+                    'title':'Read about Planned Giving at The Orbit'
+                })
+            </main>
+            @@include('includes/footer.html'})
+        </div>
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

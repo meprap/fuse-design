@@ -1,0 +1,39 @@
+@import '../common-imports';
+
+.card-a01 {
+    text-align: left;
+    &__text {
+        border-radius: 2rem;
+        // max-width: 63rem;
+        flex: 100%;
+        @include media-breakpoint-up(md){
+            flex: 90%;
+        }
+        @include media-breakpoint-up(xl){
+            flex: 90%;
+        }
+    }
+    &__img {
+        flex: 15%;
+        @include media-breakpoint-up(md){
+            flex: 15.5%;
+        }
+        @include media-breakpoint-up(xl){
+            flex: 10%;
+        }
+        img {
+            @include media-breakpoint-up(lg){
+                width: 5.2rem;
+            }
+            @include media-breakpoint-up(xl){
+                width: 7.2rem;
+            }
+        }
+    }
+    &:not(&:first-child) {
+        margin-top: 1.6rem;
+        @include media-breakpoint-up(md) {
+            margin-top: 2rem;
+        }
+    }
+}
