@@ -1,7 +1,10 @@
 @import '../common-imports';
+@import '../sliders/swiper-a04';
 
 .featured-video-a {
     &__content {
+        position: relative;
+        z-index: 3;
         @include media-breakpoint-up(md) {
             width: 31%;
         }
@@ -11,11 +14,23 @@
         }
     }
     &__video {
+        width: 100%;
         @include media-breakpoint-up(md) {
             width: 65%;
         }
         @include media-breakpoint-up(xl) {
             width: 75.5rem;
+        } 
+        .video-slider {
+            .swiper-a04-wrap{
+                @include media-breakpoint-up(md) {
+                    &::before{
+                        background-image: none;
+                        background-color: $cream;
+                        left: calc(-100% - 2.8rem);
+                    }
+                }
+            }
         }
     }
     &__link {

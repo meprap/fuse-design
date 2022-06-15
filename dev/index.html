@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        @@include('includes/head.html',{'pageTitle':'ORR Group - Home'})
+        @@include('includes/head.html',{'pageTitle':'Fuse Corps - Home'})
     </head>
     <body class="homepage">
         <div class="theme-app d-flex flex-column">
@@ -22,35 +22,12 @@
                         'imgPath'               : 'hiker-orr-group-homepage-transparent-background-pl-01@2x.png',
                     })
 
-                    @@include('includes/modules/section/quote.html', {
-                        'number'    : 'more',
-                        'quoteSkin' : 'quote--alternate'
-                    })
-                    
-                    @@include('includes/modules/section/porthole-module.html',{
-                        'moduleType'    : 'porthole-module-1',
-                        'bgType'        : 'bg-cream',
-                        'padding'       : 'pt-xl-12 pt-md-12 pb-md-4 pt-10 pb-6',
-                        'titleAlign'    : 'text-center',
-                        'titleDisplay'  : 'd-block',
-                        'title'         : 'Our Services',
-                        'titleMargin'   : 'mb-xl-20 mb-md-6 mb-8',
-                    })
-                    @@include('includes/modules/section/featured-video-a.html',{
-                        'title'     : 'Our Insights',
-                        'subtitle'  : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam bibendum tristique.',
-                    })
-
                     @@include('includes/modules/section/from-the-orbit.html', {
                         'h3Heading'     : 'From our Knowledge Center',
                         'subTitle'      : 'Where philanthropy is now, and where we see it going',
                     })
-
-                    @@include('includes/modules/section/logo-scroll.html', {
-                        'headerShowHide' : ""
-                    })
                 </main>
-                @@include('includes/footer.html'})
+                @@include('includes/footer.html')
             </div>
             @@include('includes/scripts.html')
         </div>

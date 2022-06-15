@@ -1,6 +1,14 @@
 <section class="article-content">
     <div class="container">
-        <div class="article-content-wrap position-relative texture-white pb-8 pb-md-16 pt-xl-25 pb-xl-26">
+        @@if (context.modifier === "imageWithContent"){
+            <div class="article-content-wrap position-relative texture-white pt-xl-25">
+        }
+        @@if (context.modifier === "image"){
+            <div class="article-content-wrap position-relative texture-white pb-8 pb-md-16 pt-xl-25 pb-xl-26">
+        }
+        @@if (context.modifier === "video"){ 
+            <div class="article-content-wrap position-relative texture-white pb-8 pb-md-16 pt-xl-25 pb-xl-26">
+        }    
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <header class="article-content-header text-orr-blue">
@@ -8,6 +16,37 @@
                             <figure>
                                 <img src="images/img-article-001@2x.jpg" alt="Title here" />
                             </figure>
+                        }
+                        @@if (context.modifier === "imageWithContent"){
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="article-content-header__individual-info order-2 order-md-1 pt-6 pt-md-40 pe-md-8">
+                                    <h3 class="article-content-header__individual-info-name mb-2 mb-md-4">
+                                        Adam Glick
+                                    </h3>
+                                    <p class="article-content-header__individual-info-position mb-4 mb-md-8">
+                                        Director
+                                    </p>
+                                    <ul class="article-content-header__individual-info-social ps-0">
+                                        <li class="d-flex align-items-center mt-4">
+                                            <figure class="me-4">
+                                                <img src="images/icon-mail@2x.png" alt="">
+                                            </figure>
+                                            <a href="#">aglick@orrgroup.com</a>  
+                                        </li>
+                                        <li class="d-flex align-items-center mt-4">
+                                            <figure class="me-4">
+                                                <img src="images/icon-linkedin@2x.png" alt="">
+                                            </figure>
+                                            <a href="#">/LinkedIn/AdamGlick</a>  
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="article-content-header__image  order-1 order-md-2">
+                                    <figure class="ratio ratio-1x1">
+                                        <img class="object-fit" src="images/profile-pic-adam-hover@2x.jpg" alt="Title here" />
+                                    </figure>
+                                </div>
+                            </div>
                         }
                         @@if (context.modifier === "video"){
                             <div class="ratio ratio-3x2">
@@ -43,6 +82,7 @@
                                 </div>
                             </div>
                         }
+                        
                         <date
                             class="
                                 eyebrow
@@ -52,17 +92,39 @@
                                 position-relative
                                 zindex-10
                                 mt-6 mt-md-9 mt-xl-14
+                                @@dateModifier
                             "
                         >
                             <a class="position-relative" href="#" title="Lorem Ipsum Tag">Lorem Ipsum Tag</a>
                             <a class="position-relative" href="#" title="Published Date, 2021">Published Date, 2021</a>
                         </date>
-                        <h4 class="mt-1 mt-md-2 mt-xl-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur.
-                        </h4>
-                        <p class="mt-4 font-bold">Created by: Lorem Ipsum</p>
+                        @@if (context.modifier === "image"){
+                            <h4 class="mt-1 mt-md-2 mt-xl-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur.
+                            </h4>
+                            <p class="mt-4 font-bold">Created by: Lorem Ipsum</p>
+                        }  
+                        @@if (context.modifier === "video"){
+                            <h4 class="mt-1 mt-md-2 mt-xl-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur.
+                            </h4>
+                            <p class="mt-4 font-bold">Created by: Lorem Ipsum</p>
+                        }        
+                        @@if (context.modifier === "imageWithContent"){
+                            <h5 class="text-orr-blue mt-6 mt-md-8 mt-xl-14">
+                                About Adam
+                            </h5>
+                        }
                     </header>
-                    <div class="article-content-post mt-6 mt-md-8 mt-xl-14">
+                    @@if (context.modifier === "imageWithContent"){
+                        <div class="article-content-post  pb-8 pb-md-14 mt-6 mt-md-8 mt-xl-14">
+                    }
+                    @@if (context.modifier === "image"){
+                        <div class="article-content-post mt-6 mt-md-8 mt-xl-14">
+                    }
+                    @@if (context.modifier === "video"){ 
+                        <div class="article-content-post mt-6 mt-md-8 mt-xl-14">
+                    }
                         <article class="post">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna
@@ -124,11 +186,39 @@
                                     <strong>sed vestibulum velit maximus sed.</strong>
                                 </a>
                             </p>
+                            @@if (context.modifier === "imageWithContent"){
+                                
+                                <h6>Recent Publications:</h6>
+                                <ul>
+                                    <li>
+                                        <a href="#">The Main Event: Looking Back, Planning Ahead</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">How To Stand Out This #GivingTuesday: The Answer Is In Your Messaging</a>
+                                    </li>
+                                </ul>
+                            }
                         </article>
+                       
                     </div>
                 </div>
             </div>
+            @@if (context.modifier === "imageWithContent"){
+                <article class="quote texture-dark text-white py-8 py-md-12 px-12 px-md-15 px-xl-25 position-relative">
+                    <div class="quote-icon position-absolute bg-white text-orr-blue">
+                        <div class="position-relative h-100 w-100">
+                            <span class="position-absolute h-100 w-100">“</span>
+                        </div>
+                    </div>
+                    <p class="q-2">When Orr Group orem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec dui a est pellentesque hendrerit vitae a nulla. Quisque ut aliquam velit. Etiam pharetra scelerisque neque, eu finibus nibh maximus. Quisque ut aliquam velit pellentesque hendrerit vitae.”</p> 
+                </article>
+            }
         </div>
+        @@if (context.modifier === "imageWithContent"){
+            <div class="d-flex justify-content-center pt-8 pb-10 pt-md-14 pb-md-20">
+                <a href="#" class="btn btn-light-blue">Back To Our Team</a>
+            </div>
+        }
     </div>
 </section>
 

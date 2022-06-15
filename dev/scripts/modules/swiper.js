@@ -49,7 +49,6 @@ class SwiperSliderA01 {
                         for (var i = 1; i < total + 1; i++) {
                             let swiperNext = element.closest('.swiper-a01').querySelector('.swiper-button-next');
                             let swiperPrev = element.closest('.swiper-a01').querySelector('.swiper-button-prev');
-                            console.log(total)
                             if(current === (total-1)){
                                 swiperNext.classList.add('swiper-button-disabled');
                             }

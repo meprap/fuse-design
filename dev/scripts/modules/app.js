@@ -1,4 +1,3 @@
-// import 'popper.js/dist/umd/popper.js';
 import Popper from 'popper.js';
 import 'bootstrap/js/dist/dropdown';
 import 'bootstrap/js/dist/tab';
@@ -15,6 +14,7 @@ class global {
         this.bgOverlay();
         this.toggleHeader();
         this.hideDropDownOnScroll();
+        this.dropDownNameUpdate();
     }
 
     // Header nav
@@ -191,13 +191,13 @@ class global {
     //this method hides dropdown on scroll
     hideDropDownOnScroll(){
         window.addEventListener("scroll",() =>{
-            var element = document.querySelectorAll(".dropdown-menu");
+            var element = document.querySelectorAll(".navbar-main .dropdown-menu");
             if (element) {
                 for (var i = 0; i < element.length; i++) {
                     element[i].classList.remove("show");
                 }
             }
-            var element1 = document.querySelectorAll(".dropdown-toggle");
+            var element1 = document.querySelectorAll(".navbar-main .dropdown-toggle");
             if (element1) {
                 for (var i = 0; i < element1.length; i++) {
                     element1[i].classList.remove("show");
@@ -207,7 +207,21 @@ class global {
                 
         } )
     }
+
+    dropDownNameUpdate(){
+        const newsletterArchiveLinks = document.querySelectorAll('.newsletter-archive .dropdown-menu li a');
+        newsletterArchiveLinks.forEach( link => {
+            if(! link.classList.contains('is-passive')){
+                link.addEventListener('click', function(){
+                    const select = document.querySelector('.newsletter-archive .active #dropdownMenuLink');
+                    var linkTitle = link.getAttribute('title');
+                    select.innerHTML = linkTitle;
+                });
+            }
+        })
+    }
 }
 
 export default global;
 new global();
+
